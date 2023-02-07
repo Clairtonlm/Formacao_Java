@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Array E Colletion/src"/>
+	<classpathentry kind="src" path="Classes_e_Metodos/src"/>
+	<classpathentry kind="src" path="Estrutura_de_Controle/src"/>
+	<classpathentry kind="src" path="JavaOrientacaoObjetos/src"/>
+	<classpathentry kind="output" path="Array E Colletion/bin"/>
+</classpath>

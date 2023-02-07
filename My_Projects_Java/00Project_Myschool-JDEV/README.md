@@ -1,0 +1,5 @@
+Full Stack em Java EE, estou estudando e irei aprender lógica, Java, Java EE (Web) e irei criar muitos projetos profissionais com Spring MVC, Spring Boot API REST, Spring Data JPA, Hibernate e JPA, SQL, JDBC, banco PostgreSQL, Maven, Html, JavaScript, Angular, BootStrap, JQuery, Jasper Ireport, JSP, JSF, PrimeFaces, Thymeleaf, gráfico, relatório, padrões em MVC, DAO, controller, repository, persistência de dados, Ajax, WebServices, API REST, CRUD completo e complexo e integração e muito mais.
+
+-Irei me tornar um dev. full-stack em Java. -Aprenderei a criar projetos com CRUD, front-end, back-end, banco de dados, segurança, gráficos, relatórios e hospedagem.
+
+Aprender a dominar do zero frameworks como: -Spring Boot REST API. -Spring Boot MVC. -Spring Data JPA -Angular 8 e 9. -Spring Security. -Hospedagem. -Banco de dados -Arquitetura de projetos e muitos mais...

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2975809c-4884-4366-97e1-a4d07688449d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../03-Cod3er-Java/Classes_e_Metodos/src/classes/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../03-Cod3er-Java/Classes_e_Metodos/src/classes/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03-Cod3er-Java/Classes_e_Metodos/src/classes/DataTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../03-Cod3er-Java/Classes_e_Metodos/src/classes/DataTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03-Cod3er-Java/Classes_e_Metodos/src/classes/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../03-Cod3er-Java/Classes_e_Metodos/src/classes/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03-Cod3er-Java/Classes_e_Metodos/src/classes/ProdutoTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../03-Cod3er-Java/Classes_e_Metodos/src/classes/ProdutoTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Artigos_Java/Tratamento de Exceções em Java.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../04-Artigos_Java/Tratamento de Exceções em Java.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05-EstudandoDebbuging/Debbuging/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05-EstudandoDebbuging/Debbuging/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05-EstudandoDebbuging/Debbuging/bin/Debbuging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05-EstudandoDebbuging/Debbuging/src/Debbuging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05-EstudandoDebbuging/Debbuging/src/Debbuging.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05-EstudandoDebbuging/UncheckedException/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05-EstudandoDebbuging/UncheckedException/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05-EstudandoDebbuging/UncheckedException/bin/UncheckedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05-EstudandoDebbuging/UncheckedException/src/UncheckedException.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2INjBWrz7noZ8hlDCfevbWjaJPm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Meu Drive/01-Programação/01-Projetos Programação/02-Preparação _Java/00-FundamentosJava/NotasMatrizes"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2975809c-4884-4366-97e1-a4d07688449d" name="Changes" comment="" />
+      <created>1670028813562</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670028813562</updated>
+    </task>
+    <servers />
+  </component>
+</project>
