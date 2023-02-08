@@ -3,6 +3,7 @@ package stream;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class ImprimindoFore {
 
@@ -20,7 +21,14 @@ public class ImprimindoFore {
 		Iterator<String> it= aprovados.iterator();
 		while(it.hasNext()) {
 			System.out.println(it.next());
+			
+			
 		}
+		System.out.println("\nUsando Stream\n--------------------\n");
+		
+		Stream<String> stream = aprovados.stream();
+		stream.forEach(System.out::println);
+		
 	}//fim main
 	
 
