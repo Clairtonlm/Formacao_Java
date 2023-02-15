@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 import escolanova.Estudante;
 import escolanova.Materias;
 
-public class Executar {
+public class Ate_a_Aula9_20 {
 
 	public static void main(String[] args) {
 		

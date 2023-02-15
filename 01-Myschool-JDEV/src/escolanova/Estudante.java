@@ -83,15 +83,15 @@ public class Estudante {
 	public String getAlunoAprovado() {
 		double media = this.getMediaNota();
 		if (media >= 7) {
-			return "Aprovado";
+			return " Aluno Aprovado";
 		} else {
-			return "REPROVADO";
+			return " Aluno REPROVADO";
 		}
 	}
 
 	@Override
 	public String toString() {
-		return "Estudante [nome=" + nome + ", idade=" + idade + "]";
+		return "Estudante [nome= " + nome + ", idade= " + idade + "]";
 	}
 
 }
