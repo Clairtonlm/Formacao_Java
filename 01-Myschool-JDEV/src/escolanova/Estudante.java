@@ -71,7 +71,12 @@ public class Estudante {
 
 	// Metodo que retona a média do Aluno
 	public double getMediaNota() {
-		return 0;
+		double somaNotas = 0;
+		for (Materias materias : materias) {
+			somaNotas += materias.getNota1();
+		}
+				
+		return somaNotas / materias.size();
 	}
 
 	/* Metodo usando String */
