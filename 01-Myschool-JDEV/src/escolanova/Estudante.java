@@ -82,12 +82,18 @@ public class Estudante {
 	/* Metodo usando String */
 	public String getAlunoAprovado() {
 		double media = this.getMediaNota();
-		if (media >= 7) {
-			return " Aluno Aprovado";
-		} else {
-			return " Aluno REPROVADO";
+		if(media >= 50) {
+			if(media >= 70) {
+				return " Aluno Aprovado, PARABÉNS!!!!";
+			}else {
+				return "Aluno em recuperação tem que estudar mais";
+			}
+		}else {
+			 return " Aluno REPROVADO";
 		}
+		
 	}
+	
 
 	@Override
 	public String toString() {

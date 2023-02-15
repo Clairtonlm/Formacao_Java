@@ -35,7 +35,7 @@ public class Aula9_21 {
 		int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma Materia");
 		if (escolha == 0) {
 			String materiaRemover = JOptionPane.showInputDialog("Qual materia a ser removida 1, 2, 3, 4 ? ");
-			estudante1.getMaterias().remove(Integer.valueOf(materiaRemover).intValue()-1);
+			estudante1.getMaterias().remove(Integer.valueOf(materiaRemover).intValue()-1);//-1 para acessar o local correto da lista
 		}
 
 		System.out.println(estudante1);
