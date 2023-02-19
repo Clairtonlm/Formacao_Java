@@ -34,9 +34,16 @@ public class Aula9_21 {
 		// Remover disciplina da Grade
 		int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma Materia");
 		if (escolha == 0) {
-			String materiaRemover = JOptionPane.showInputDialog("Qual materia a ser removida 1, 2, 3, 4 ? ");
-			estudante1.getMaterias().remove(Integer.valueOf(materiaRemover).intValue()-1);//-1 para acessar o local correto da lista
-		}
+			
+			int continuarRemover = 0;
+					
+			while(continuarRemover == 0){
+				String materiaRemover = JOptionPane.showInputDialog("Qual materia a ser removida 1, 2, 3, 4 ? ");
+				estudante1.getMaterias().remove(Integer.valueOf(materiaRemover).intValue()-1);//-1 para acessar o local correto da lista
+			}
+			
+		
+	}
 
 		System.out.println(estudante1);
 		System.out.println("Media do aluno = " + estudante1.getMediaNota());
