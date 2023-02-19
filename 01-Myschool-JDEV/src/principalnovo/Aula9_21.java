@@ -10,13 +10,13 @@ public class Aula9_21 {
 
 		// Para receber as entradas
 		String nome = JOptionPane.showInputDialog("Qual o nome do Aluno");
-		String idade = JOptionPane.showInputDialog("Qual a idade do Aluno(a)");
+		//String idade = JOptionPane.showInputDialog("Qual a idade do Aluno(a)");
 
 		// 1-Instancia o objeto
 		Estudante estudante1 = new Estudante();
 		// 2-seta os atributos
 		estudante1.setNome(nome);
-		estudante1.setIdade(Integer.valueOf(idade));
+		//estudante1.setIdade(Integer.valueOf(idade));
 
 		// Recebendo materia e nota de forma dinanmica
 		for (int posicao = 1; posicao <= 4; posicao++) {
@@ -33,13 +33,16 @@ public class Aula9_21 {
 
 		// Remover disciplina da Grade
 		int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma Materia");
-		if (escolha == 0) {
-			
+		
+		if (escolha == 0) {//yes--quer remover?SIM é zero.
 			int continuarRemover = 0;
+			int posicao = 1;
 					
 			while(continuarRemover == 0){
 				String materiaRemover = JOptionPane.showInputDialog("Qual materia a ser removida 1, 2, 3, 4 ? ");
-				estudante1.getMaterias().remove(Integer.valueOf(materiaRemover).intValue()-1);//-1 para acessar o local correto da lista
+				estudante1.getMaterias().remove(Integer.valueOf(materiaRemover).intValue() - posicao);//-1 para acessar o local correto da lista
+				posicao ++;
+				continuarRemover = JOptionPane.showInternalConfirmDialog(null, "Continuar a remover?");
 			}
 			
 		
