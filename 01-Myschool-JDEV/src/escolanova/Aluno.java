@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Estudante {
+public class Aluno {
 
 	private String nome;
 	private int idade;
@@ -23,15 +23,15 @@ public class Estudante {
 	}
 
 	/* cria os dados na memoria - sendo padrão java */
-	public Estudante() {
+	public Aluno() {
 
 	}
 
-	public Estudante(String nomePadrao) {
+	public Aluno(String nomePadrao) {
 		nome = nomePadrao;
 	}
 
-	public Estudante(String nomePadrao, int idadePadrao) {
+	public Aluno(String nomePadrao, int idadePadrao) {
 		nome = nomePadrao;
 		idade = idadePadrao;
 	}
@@ -65,7 +65,7 @@ public class Estudante {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Estudante other = (Estudante) obj;
+		Aluno other = (Aluno) obj;
 		return idade == other.idade && Objects.equals(nome, other.nome);
 	}
 
@@ -82,8 +82,8 @@ public class Estudante {
 	/* Metodo usando String */
 	public String getAlunoAprovado() {
 		double media = this.getMediaNota();
-		if(media >= 50) {
-			if(media >= 70) {
+		if(media <= 5.0) {
+			if(media >= 6.0) {
 				return " Aluno Aprovado, PARABÉNS!!!!";
 			}else {
 				return "Aluno em recuperação tem que estudar mais";
