@@ -61,13 +61,30 @@ public class Aula9_21 {
 		}
 		
 		for (Aluno aluno : alunos) {
+			
+			
 			//procurando um nome de Aluno e eignorando miuscula e 
 			if(aluno.getNome().equalsIgnoreCase("Clairton")) {
-				System.out.println(alunos);
+				alunos.remove(aluno);
+				break;//quando encontar o clairton para o codigo.
+				
+			}else {
+				System.out.println(alunos);//descrição do Objeto
 				System.out.println("Media do aluno = " + aluno.getMediaNota());
 				System.out.println("Resultado = " + aluno.getAlunoAprovado());
 				System.out.println("----------------------------");
-				break;//quando encontar o clairton para o codigo.
+			}
+		}
+		for (Aluno aluno : alunos) {
+			System.out.println("Alunos que sobraram na lista");
+			System.out.println(aluno.getNome());
+			System.out.println("Suas materias são");
+			System.out.println("----------------------------");
+			
+			for(Materias materia :aluno.getMaterias()) {
+				System.out.println(materia.getMateria());
+				
+				
 			}
 		}
 			

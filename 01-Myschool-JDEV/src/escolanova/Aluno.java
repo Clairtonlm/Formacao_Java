@@ -82,7 +82,7 @@ public class Aluno {
 	/* Metodo usando String */
 	public String getAlunoAprovado() {
 		double media = this.getMediaNota();
-		if(media <= 5.0) {
+		if(media >= 5.0) {
 			if(media >= 6.0) {
 				return " Aluno Aprovado, PARABÉNS!!!!";
 			}else {
