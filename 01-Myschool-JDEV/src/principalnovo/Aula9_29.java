@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 import escolanova.AlunoEn;
 import escolanova.Materias;
 
-public class Aula9_21 {
+public class Aula9_29 {
 
 	public static void main(String[] args) {
 		
@@ -61,36 +61,13 @@ public class Aula9_21 {
 		
 		}
 		
-		for (AlunoEn aluno : alunos) {
+		//percorrendo lista pelas posições para poder subistituir
+		for(int pos = 0; pos < alunos.size(); pos++) {
 			
-			
-			//procurando um nome de Aluno removendo e eignorando miuscula e 
-			if(aluno.getNome().equalsIgnoreCase("Clairton")) {
-				alunos.remove(aluno);
-				break;//quando encontar o clairton para o codigo.
-				
-			}else {
-				System.out.println(alunos);//descrição do Objeto
-				System.out.println("Media do aluno = " + aluno.getMediaNota());
-				System.out.println("Resultado = " + aluno.getAlunoAprovado());
-				System.out.println("----------------------------");
-			}
-		}
-		for (AlunoEn aluno : alunos) {
-			System.out.println("Alunos que sobraram na lista");
-			System.out.println(aluno.getNome());
-			System.out.println("Suas materias são");
-			System.out.println("----------------------------");
-			
-			for(Materias materia :aluno.getMaterias()) {
-				System.out.println(materia.getMateria());
-				
-				
-			}
 		}
 			
 		
 
-	}
+	}//fim da main
 
-}
+}//fim da classe
