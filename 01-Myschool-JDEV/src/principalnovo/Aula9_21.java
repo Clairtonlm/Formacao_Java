@@ -4,23 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JOptionPane;
-import escolanova.Aluno;
+
+import escolanova.AlunoEn;
 import escolanova.Materias;
 
 public class Aula9_21 {
 
 	public static void main(String[] args) {
 		
-		List<Aluno> alunos = new  ArrayList<Aluno>();
+		List<AlunoEn> alunos = new  ArrayList<AlunoEn>();
 		
-		for(int qtd = 0; qtd <= 1;qtd++) {
+		for(int qtd = 0; qtd <= 1; qtd++) {
 			
 			// Para receber as entradas
 			String nome = JOptionPane.showInputDialog("Qual o nome do Aluno" +qtd+ "?");
 			//String idade = JOptionPane.showInputDialog("Qual a idade do Aluno(a)");
 
 			// 1-Instancia o objeto
-			Aluno aluno1 = new Aluno();
+			AlunoEn aluno1 = new AlunoEn();
 			// 2-seta os atributos
 			aluno1.setNome(nome);
 			//estudante1.setIdade(Integer.valueOf(idade));
@@ -60,7 +61,7 @@ public class Aula9_21 {
 		
 		}
 		
-		for (Aluno aluno : alunos) {
+		for (AlunoEn aluno : alunos) {
 			
 			
 			//procurando um nome de Aluno e eignorando miuscula e 
@@ -75,7 +76,7 @@ public class Aula9_21 {
 				System.out.println("----------------------------");
 			}
 		}
-		for (Aluno aluno : alunos) {
+		for (AlunoEn aluno : alunos) {
 			System.out.println("Alunos que sobraram na lista");
 			System.out.println(aluno.getNome());
 			System.out.println("Suas materias são");

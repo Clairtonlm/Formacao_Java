@@ -1,7 +1,7 @@
 package principalnovo;
 
 import javax.swing.JOptionPane;
-import escolanova.Aluno;
+import escolanova.AlunoEn;
 import escolanova.Materias;
 
 public class Ate_a_Aula9_20 {
@@ -13,7 +13,7 @@ public class Ate_a_Aula9_20 {
 		String idade = JOptionPane.showInputDialog("Qual a idade do Aluno(a)");
 		
 		//1-Instancia o objeto
-		Aluno estudante1 = new Aluno();
+		AlunoEn estudante1 = new AlunoEn();
 		
 		//2-seta os atributos
 		estudante1.setNome(nome);
