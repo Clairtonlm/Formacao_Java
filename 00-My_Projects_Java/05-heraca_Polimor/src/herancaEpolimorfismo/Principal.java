@@ -8,8 +8,7 @@ public class Principal {
         p.imprimirDados();
 
         System.out.println("\nInformações do Paciente");
-        Pessoa paciente = new Paciente("Jose da Silva","002003004",23,"0002",
-                "Camed");
+        Pessoa paciente = new Paciente("Jose da Silva","002003004",23,"0002","Camed");
         paciente.imprimirDados();
 
         System.out.println("\nInformações do Funcionario");
