@@ -19,9 +19,6 @@ public class DesafioFilter {
 		
 		Predicate<CarroFilter> economico = c -> c.economico;
 		
-		Function<AlunoFilter, String> saudacaoAprovado =
-				a -> "Parabéns---> " + a.nome + " ! Voce foiaprovado";
-				
 		Function<CarroFilter, String> verificar = 
 				c -> "Carros conomico -->  " + c.nome;
 		
