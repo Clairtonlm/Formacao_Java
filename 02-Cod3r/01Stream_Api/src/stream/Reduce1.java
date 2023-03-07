@@ -12,7 +12,8 @@ public class Reduce1 {
         Integer total1 = nums.parallelStream().reduce(soma).get();
         System.out.println(total1);
 
-        /* Cui-dado ao passer accumulator different de zero, pois ele vai acumular a cada interação; */
+        /* Cuidado ao passer accumulator different de zero, 
+         * pois ele vai acumular a cada interação; */
         Integer total2 = nums.stream().reduce(100, soma);
         System.out.println(total2);
 

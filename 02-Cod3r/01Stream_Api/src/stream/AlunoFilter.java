@@ -4,6 +4,10 @@ public class AlunoFilter {
 	final String nome;
 	final double nota;
 	 boolean bomCompotamento;
+	 
+	 public AlunoFilter( String nome, double nota) {
+		 this(nome, nota, true);
+	 }
 	
 	public AlunoFilter(String nome, double nota,boolean bomComportamento) {
 		super();
