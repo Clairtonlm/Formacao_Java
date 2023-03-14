@@ -16,6 +16,11 @@ public class AlunoFilter {
 		this.bomCompotamento = bomComportamento;
 		
 	}
+
+	@Override
+	public String toString() {
+		return "AlunoFilter [nome=" + nome + ", nota=" + nota + "]";
+	}
 	
 	
 	

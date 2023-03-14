@@ -20,7 +20,7 @@ public class Match {
 		
 		System.out.println(alunos.stream().allMatch(aprovados));//todos foram aprovados
 		System.out.println(alunos.stream().anyMatch(aprovados));//algum foi aprovado
-		System.out.println(alunos.stream().noneMatch(reprovados));//tem aluno reprovado?
+		System.out.println(alunos.stream().noneMatch(reprovados));//nenhum  aluno reprovado?true
 	}
 
 }
