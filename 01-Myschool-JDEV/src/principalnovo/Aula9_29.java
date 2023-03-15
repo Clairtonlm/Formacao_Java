@@ -15,7 +15,7 @@ public class Aula9_29 {
 
 	public static void main(String[] args) {
 		
-		List<AlunoEn> alunos = new  ArrayList<AlunoEn>();
+		List<Aluno> alunos = new  ArrayList<Aluno>();
 		//Aqui pedindindo a quantidade de aluno na lista
 		for(int qtd = 0; qtd <= 2; qtd++) {
 			
@@ -24,7 +24,7 @@ public class Aula9_29 {
 			//String idade = JOptionPane.showInputDialog("Qual a idade do Aluno(a)");
 
 			// 1-Instancia o objeto
-			AlunoEn aluno1 = new AlunoEn();
+			Aluno aluno1 = new Aluno();
 			// 2-seta os atributos
 			aluno1.setNome(nome);
 			//estudante1.setIdade(Integer.valueOf(idade));
@@ -66,15 +66,32 @@ public class Aula9_29 {
 		
 		//percorrendo lista pelas posições para poder subistituir
 		for(int pos = 0; pos < alunos.size(); pos++) {
-			AlunoEn aluno = alunos.get(pos);
+			Aluno aluno = alunos.get(pos);
+			
+			//Subistituindo Aluno na Lista-aula 
+			//Quando for Pedro---> preciso de ooutro obj
+			if(aluno.getNome().equalsIgnoreCase("Pedro")) {
+				//criando o outro objeto
+				AlunoEn trocar = new AlunoEn();
+				trocar.setNome("Aluno foi Trocado");
+				
+				Materias disciplina = new Materias();
+				disciplina.setMateria("Phayton");
+				disciplina.setNota1(9);
+				
+				trocar.getMaterias().add(disciplina);
+				
+				aluno.set(pos, trocar);
+				aluno = alunos.get(pos);
+			}
 			
 			System.out.println(" Aluno = " + aluno.getNome());
 			System.out.println(" Média do aluno = " + aluno.getMediaNota());
 			System.out.println(" Resultado = " + aluno.getAlunoAprovado());
 			
-			for (int mat = 0; mat < aluno.getMaterias().size();mat++);
+			for (int mat = 0; mat < alunos.getMaterias().size();mat++);
 			
-			Materias disc = aluno.getMaterias().get(mat);
+			Materias disc =  aluno.getMaterias().get(mat);
 			
 			System.out.println("Média = " + disc.getMateria() + " Nota = " + disc.getNota1());
 		}

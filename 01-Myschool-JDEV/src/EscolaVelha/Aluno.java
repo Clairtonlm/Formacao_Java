@@ -1,5 +1,9 @@
 package EscolaVelha;
 
+import java.awt.Component;
+
+import escolanova.AlunoEn;
+
 /*Esta nossa classe/objeto que representa o Aluno*/
 public class Aluno {
 	/* Esses são atributos da classe Aluno*/
@@ -137,6 +141,14 @@ public class Aluno {
 				+ " nomePai=" + nomePai
 				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
 				+ serieMatriculado + ", disciplina=" + disciplina + "]";
+	}
+	public void set(int pos, AlunoEn trocar) {
+		// TODO Auto-generated method stub
+		
+	}
+	public Component getMaterias() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
