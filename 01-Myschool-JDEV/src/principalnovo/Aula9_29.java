@@ -11,11 +11,13 @@ import escolanova.Materias;
 
 public class Aula9_29 {
 
+	private static int mat;
+
 	public static void main(String[] args) {
 		
 		List<AlunoEn> alunos = new  ArrayList<AlunoEn>();
-		
-		for(int qtd = 0; qtd <= 1; qtd++) {
+		//Aqui pedindindo a quantidade de aluno na lista
+		for(int qtd = 0; qtd <= 2; qtd++) {
 			
 			// Para receber as entradas
 			String nome = JOptionPane.showInputDialog("Qual o nome do Aluno" +qtd+ "?");
@@ -27,8 +29,8 @@ public class Aula9_29 {
 			aluno1.setNome(nome);
 			//estudante1.setIdade(Integer.valueOf(idade));
 
-			// Recebendo materia e nota de forma dinanmica
-			for (int posicao = 1; posicao <= 3; posicao++) {
+			// Recebendo materia e nota de forma dinanmica recendo disciplina 1
+			for (int posicao = 1; posicao <= 1; posicao++) {
 				String nomeMateria = JOptionPane.showInputDialog(" Nome da Materia " + posicao + "?");
 				String notaMateria = JOptionPane.showInputDialog(" Nota da Materia " + posicao + "?");
 
@@ -64,7 +66,17 @@ public class Aula9_29 {
 		
 		//percorrendo lista pelas posições para poder subistituir
 		for(int pos = 0; pos < alunos.size(); pos++) {
-			AlunoEn aluno = alunos.get(pos);	
+			AlunoEn aluno = alunos.get(pos);
+			
+			System.out.println(" Aluno = " + aluno.getNome());
+			System.out.println(" Média do aluno = " + aluno.getMediaNota());
+			System.out.println(" Resultado = " + aluno.getAlunoAprovado());
+			
+			for (int mat = 0; mat < aluno.getMaterias().size();mat++);
+			
+			Materias disc = aluno.getMaterias().get(mat);
+			
+			System.out.println("Média = " + disc.getMateria() + " Nota = " + disc.getNota1());
 		}
 			
 		
