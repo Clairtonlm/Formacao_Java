@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+import EscolaVelha.Aluno;
 import escolanova.AlunoEn;
 import escolanova.Materias;
 
@@ -63,7 +64,7 @@ public class Aula9_29 {
 		
 		//percorrendo lista pelas posições para poder subistituir
 		for(int pos = 0; pos < alunos.size(); pos++) {
-			
+			AlunoEn aluno = alunos.get(pos);	
 		}
 			
 		
