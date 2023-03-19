@@ -16,7 +16,7 @@ public class StartJava {
 		/*Crinado validação de permissão com login e senha
 		 */
 		String login = JOptionPane.showInputDialog("Informe seu login");
-		String senha = JOptionPane.showInputDialog("Informe seu senha");
+		String senha = JOptionPane.showInputDialog("Informe sua senha");
 
 		if(login.equalsIgnoreCase("admin")&& senha.equalsIgnoreCase("admin")){
 
