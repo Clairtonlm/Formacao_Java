@@ -1,0 +1,76 @@
+Esses objetos forem retirados da Main para organizar melhor a visulaização
+
+System.out.println("______________________________________________\n");
+		
+	
+		Aluno aluno2 = new Aluno();/*Aqui Pedro*/
+		aluno2.setNome("Pedro da silva");
+		aluno2.setIdade(45);
+		aluno2.setDataNascimento("22/10/1987");
+		aluno2.setRegistroGeral("09012023");
+		aluno2.setNumeroCpf("003.004.005-06");
+		aluno2.setNomeMae("Joana Dark da Silva");
+		aluno2.setNomePai("Lula da Silva");
+		aluno2.setDataMatricula("01/01/2023");
+		aluno2.setNomeEscola("Escola Digital Dev Java");
+		aluno2.setSerieMatriculado("8ª Série");*/
+		
+		aluno2.setNota1(7);
+		aluno2.setNota2(9);
+		aluno2.setNota3(5);
+		aluno2.setNota4(7);
+		
+		System.out.println("O nome da Aluna 02 é: " + aluno2.getNome());
+		System.out.println("A média do " + aluno2.getNome()+ " " +  aluno2.getMediaNota());
+		
+		System.out.println("Resultado = " + aluno2.getNome()+ " "+ aluno2.getAlunoAprovado());
+		
+		
+		System.out.println("______________________________________________\n");
+		
+		Aluno aluno3 = new Aluno();
+		aluno3.setNome("JARVIS DA SILVA");
+		aluno3.setIdade(45);
+		aluno3.setDataNascimento("22/10/1987");
+		aluno3.setRegistroGeral("09012023");
+		aluno3.setNumeroCpf("003.004.005-06");
+		aluno3.setNomeMae("Joana Dark da Silva");
+		aluno3.setNomePai("Lula da Silva");
+		aluno3.setDataMatricula("01/01/2023");
+		aluno3.setNomeEscola("Escola Digital Dev Java");
+		aluno3.setSerieMatriculado("8ª Série");
+		
+		System.out.println("O nome da Aluna 03 é: " + aluno3.getNome());
+		
+		System.out.println("______________________________________________\n");
+		
+		Aluno aluno4 = new Aluno("Maria da silva");
+		aluno4.setNome("Maria da Silva");
+		aluno4.setIdade(45);
+		aluno4.setDataNascimento("22/10/1987");
+		aluno4.setRegistroGeral("09012023");
+		aluno4.setNumeroCpf("003.004.005-06");
+		aluno4.setNomeMae("Joana Dark da Silva");
+		aluno4.setNomePai("Lula da Silva");
+		aluno4.setDataMatricula("01/01/2023");
+		aluno4.setNomeEscola("Escola Digital Dev Java");
+		aluno4.setSerieMatriculado("8ª Série");
+		
+		System.out.println("O nome da Aluna 04 é: " + aluno4.getNome());
+		
+		System.out.println("______________________________________________\n");
+		
+		Aluno aluno5 = new Aluno("José", 45);
+		aluno5.setNome("Josué da Silva");
+		aluno5.setIdade(45);
+		aluno5.setDataNascimento("22/10/1987");
+		aluno5.setRegistroGeral("09012023");
+		aluno5.setNumeroCpf("003.004.005-06");
+		aluno5.setNomeMae("Joana Dark da Silva");
+		aluno5.setNomePai("Lula da Silva");
+		aluno5.setDataMatricula("01/01/2023");
+		aluno5.setNomeEscola("Escola Digital Dev Java");
+		aluno5.setSerieMatriculado("8ª Série");
+		
+		System.out.println("O nome da Aluna 05 é: " + aluno5.getNome());
+	}
