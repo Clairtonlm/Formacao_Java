@@ -1,0 +1,253 @@
+O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). O gerente de uma loja de carros gostaria de um programa para calcular o preço de um carro novo para os clientes. Você receberá o custo de fábrica e as porcentagens referentes ao distribuidor e os impostos e deverá escrever programa para ler esses valores e imprimir o valor final do carro.
+
+Entrada
+Você recebera três valores inteiros que representam o custo de fábrica, as porcentagens do distribuidor e os impostos.
+
+Saída
+Como saída, teremos o valor final do preço de um carro novo
+
+continue com esse código
+
+/ Para ler e escrever dados em Java, aqui na DIO padronizamos da seguinte forma: 
+// - new Scanner(System.in): cria um leitor de Entradas, com métodos úteis com prefixo "next";
+// - System.out.println:.imprime um texto de Saída (Output) e pulando uma linha.  
+
+import java.util.*;
+
+public class Main{
+
+	public static void main(String[] args) {
+
+	    Scanner scan = new Scanner(System.in);
+      int custoFabrica = scan.nextInt();
+	    int porcentagemDistribuidor = scan.nextInt();
+	    int PercentualImpostos = scan.nextInt();
+
+            int custoConsumidor;
+     
+            int Distribuidor;
+            int ValorImpostos;
+ 
+        // TODO: Implemente uma condição que calcule a porcentagem do distribuidor e dos impostos:
+ 
+        Distribuidor = (custoFabrica * porcentagemDistribuidor) / 100;
+      
+ 
+        System.out.println();
+	}
+}
+------------------------------------------
+Desafio 2
+Leia 6 valores. Em seguida, mostre quantos destes valores digitados foram positivos. Na próxima linha, deve-se mostrar a média de todos os valores positivos digitados, com um dígito após o ponto decimal.
+
+Entrada
+A entrada contém 6 números que podem ser valores inteiros ( int ) ou de ponto flutuante ( float ou double ). Pelo menos um destes números será positivo.
+
+Saída
+O primeiro valor de saída é a quantidade de valores positivos. A próxima linha deve mostrar a média dos valores positivos digitados.
+
+Exemplo de Entrada	Exemplo de Saída
+7
+-5
+6
+-3.4
+4.6
+12
+
+4 valores positivos
+7.4
+
+resposta
+
+import java.util.Scanner;
+
+public class ImprimindoValores {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int cont = 0;
+    double soma = 0;
+
+    for (int i = 0; i < 6; i++) {
+      double num = input.nextDouble();
+      if (num > 0) {
+        cont++;
+        soma += num;
+      }
+    }
+    double media = soma / cont;
+    System.out.println(cont + " valores positivos");
+    System.out.println(String.format("%.1f", media));
+  }
+}
+--------------------------------
+Desafio
+Neste desafio, faça um programa que calcule o valor de H com N termos. 
+
+Sendo, H = 1 + 1/2 + 1/3 + 1/4 + ... + 1/N. 
+
+Entrada 
+A entrada consiste em um número inteiro positivo. 
+
+Saída 
+Na saída será impresso o valor que representa a soma dos termos.
+
+Entrada	Saída
+4	2
+8	3
+3	2
+// Para ler e escrever dados em Java, aqui na DIO padronizamos da seguinte forma: 
+// - new Scanner(System.in): cria um leitor de Entradas, com métodos úteis com prefixo "next";
+// - System.out.println:.imprime um texto de Saída (Output) e pulando uma linha.  
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] Args) {
+
+     double h = 0;
+     Scanner sc = new Scanner(System.in);
+     double n = sc.nextDouble();
+
+     for (int i = 1; i <= n; i++) {
+     //TODO: Calcule o valor de H de forma que resulte na soma dos termos:
+           
+      }
+     //TODO: Imprima a soma dos termos, considerando um resultado com duas casas decimais:
+       
+   }
+}
+
+resposta
+import java.util.Scanner;
+
+public class SomaDeValores {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double n = scan.nextInt();
+        double h = 0;
+        for (int i = 1; i <= n; i++) {
+          //TODO: Calcule o valor de H de forma que resulte na soma dos termos:
+            h += 1.0 / i;
+        }
+        //TODO: Imprima a soma dos termos, considerando um resultado com duas casas decimais [CORREÇÃO: RETORNO SEM AS CASAS DECIMAIS]
+        System.out.printf("%.0f\n", h);
+    }
+}
+----------------------
+Desafio: Fibonacci Fácil
+
+Desafio
+A seguinte sequência de números 0 1 1 2 3 5 8 13 21... é conhecida como série de Fibonacci. Nessa sequência, cada número, depois dos 2 primeiros, é igual à soma dos 2 anteriores. Escreva um algoritmo que leia um inteiro N (N < 46) e mostre os N primeiros números dessa série.
+
+Entrada
+O arquivo de entrada contém um valor inteiro N (0 < N < 46).
+
+Saída
+Os valores devem ser mostrados na mesma linha, separados por um espaço em branco. Não deve haver espaço após o último valor.
+
+ 
+Exemplo de Entrada	Exemplo de Saída
+5
+
+0 1 1 2 3
+
+// Para ler e escrever dados em Java, aqui na DIO padronizamos da seguinte forma: 
+// - new Scanner(System.in): cria um leitor de Entradas, com métodos úteis com prefixo "next";
+// - System.out.println:.imprime um texto de Saída (Output) e pulando uma linha.  
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Teste {
+
+    public static void main(String[] args) throws IOException {
+        Scanner leitor = new Scanner(System.in);
+        int N = leitor.nextInt();
+        int proximo, anterior = 0, atual = 1;
+        for (int i = 1; i <= N; i++) {
+          if (i == N) System.out.println(anterior);
+       
+     //TODO: Implemente a condição ideal para que possamos obter os valores solicitados:
+        	else System.out.print(anterior + " ");
+        	proximo = anterior + atual;
+        	anterior = ; 
+        	atual =  ; 
+        }
+    }
+	
+}
+
+resposta
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class FibonacciFacil {
+    public static void main(String[] args) throws IOException {
+        Scanner leitor = new Scanner(System.in);
+        int N = leitor.nextInt();
+        int proximo, anterior = 0, atual = 1;
+        for (int i = 1; i <= N; i++) {
+          if (i == N) System.out.println(anterior);
+          else System.out.print(anterior + " ");
+          proximo = anterior + atual;
+          anterior = atual; 
+          atual = proximo; 
+        }
+    }
+    
+}
+
+-------------------------
+Desafio: Dragão!
+
+Desafio
+Daenerys é a khaleesi dos Dothraki. Juntamente com Drogon, eles vão atrás do Tyrion, para tentar dominar Westeros. Ela possui, além do seu dragãozinho, um rastreador que mede o nível de energia de qualquer ser vivo. Todos os seres com o nível menor ou igual a 8000, ela considera como se fosse um inseto. Quando passa deste valor, que foi o caso do Drogon, ela se espanta e grita “Mais de 8000”. Baseado nisso, utilize a mesma tecnologia e analise o nível de energia dos seres vivos.
+
+Entrada
+A primeira linha contém um número inteiro C relativo ao número de casos de teste. Em seguida, haverá C linhas, com um número inteiro N (100 <= N <= 100000) relativo ao nível de energia de um ser vivo.
+
+Saída
+Para cada valor lido, imprima o texto correspondente.
+
+ 
+Exemplo de Entrada	Exemplo de Saída
+3
+8001
+100
+200
+
+Mais de 8000!
+Inseto!
+Inseto!
+
+// Para ler e escrever dados em Java, aqui na DIO padronizamos da seguinte forma: 
+// - new Scanner(System.in): cria um leitor de Entradas, com métodos úteis com prefixo "next";
+// - System.out.println:.imprime um texto de Saída (Output) e pulando uma linha.  
+
+import java.util.*;
+public class Solution{ 
+    
+   public static void main(String[] args){
+            int casos, poderDeLuta;
+    
+            Scanner ler = new Scanner(System.in);
+    
+            casos = ler.nextInt();
+    
+            for(int i = 0; i < casos; i++){
+                poderDeLuta = ler.nextInt();
+
+//TODO: Implemente a condição adequada para a impressão dos textos conforme o solicitado no desafio:
+    
+                if(       ){
+                    System.out.println(        );
+                } else {
+                    System.out.println(         );
+                }
+            }
+    }
+}
+
+resposta
