@@ -7,14 +7,20 @@ import javax.swing.JOptionPane;
 
 import cursojava.classes.Aluno;
 import cursojava.classes.Disciplina;
+import cursojava.constantes.StatusAluno;
 
 public class StartJava {
 
 	public static void main(String[] args) {
 
 		List<Aluno> alunos = new  ArrayList<Aluno>();
+		List<Aluno> alunosAprovados = new  ArrayList<Aluno>();
+		List<Aluno> alunosRecuperacao = new  ArrayList<Aluno>();
+		List<Aluno> alunosReprovados = new  ArrayList<Aluno>();
+
+
 		//Aqui pedindindo a quantidade de aluno na lista
-		for(int qtd = 0; qtd <= 2; qtd++) {
+		for(int qtd = 0; qtd <= 5; qtd++) {
 			
 			// Para receber as entradas
 			String nome = JOptionPane.showInputDialog("Qual o nome do Aluno" +qtd+ "?");
@@ -40,27 +46,55 @@ public class StartJava {
 			}
 
 			// Remover disciplina da Grade
-			int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma Materia");
-			
-			if (escolha == 0) {//yes--quer remover?SIM é zero.
-				int continuarRemover = 0;
-				int posicao = 1;
-						
-				while(continuarRemover == 0){
-					String materiaRemover = JOptionPane.showInputDialog("Qual materia a ser removida 1, 2, 3, 4 ? ");
-					aluno1.getMaterias().remove(Integer.valueOf(materiaRemover).intValue() - posicao);//-1 para acessar o local correto da lista
-					posicao ++;
-					continuarRemover = JOptionPane.showInternalConfirmDialog(null, "Continuar a remover?");
-				}
-				
-				
-			
-		}
+//			int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma Materia");
+//			
+//			if (escolha == 0) {//yes--quer remover?SIM é zero.
+//				int continuarRemover = 0;
+//				int posicao = 1;
+//						
+//				while(continuarRemover == 0){
+//					String materiaRemover = JOptionPane.showInputDialog("Qual materia a ser removida 1, 2, 3, 4 ? ");
+//					aluno1.getMaterias().remove(Integer.valueOf(materiaRemover).intValue() - posicao);//-1 para acessar o local correto da lista
+//					posicao ++;
+//					continuarRemover = JOptionPane.showInternalConfirmDialog(null, "Continuar a remover?");
+//				}
+//				
+//				
+//			
+//		}
 			
 			alunos.add(aluno1);	
 		
 		}
+		// percorrendo a lista e separando os alunos
+		for(Aluno aluno : alunos){
+			if(aluno.getAlunoAprovado().equalsIgnoreCase(StatusAluno.APROVADO)){
+				alunosAprovados.add(aluno);
+			}else if(aluno.getAlunoAprovado().equalsIgnoreCase(StatusAluno.RECUPERACAO)){
+				alunosRecuperacao.add(aluno);
+			}else if(aluno.getAlunoAprovado().equalsIgnoreCase(StatusAluno.REPROVADO)){
+				alunosReprovados.add(aluno);
+			}
+		}//fim do for
+		System.out.println("------------Lista dos aporvados---------");
+		for(Aluno aluno : alunosAprovados){
+			System.out.println("Nome : " + aluno.getNome());
+			System.out.println(" Resultado : "+ aluno.getAlunoAprovado());
+			System.out.println("Média : "+ aluno.getMediaNota());
+		}
+		System.out.println("------------Lista dos Recuoeracao---------");
+		for(Aluno aluno : alunosRecuperacao){
+			System.out.println("Nome : " + aluno.getNome());
+			System.out.println(" Resultado : "+ aluno.getAlunoAprovado());
+			System.out.println("Média : "+ aluno.getMediaNota());
+			}
+		System.out.println("------------Lista dos Reprovados---------");
+		for(Aluno aluno : alunosReprovados){
+			System.out.println("Nome : " + aluno.getNome());
+			System.out.println(" Resultado : "+ aluno.getAlunoAprovado());
+			System.out.println("Média : "+ aluno.getMediaNota());
 
-	}
+		}
+	}//fim
 
-}
+}//fim
