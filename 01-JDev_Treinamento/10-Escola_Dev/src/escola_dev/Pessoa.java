@@ -2,7 +2,7 @@ package escola_dev;
 
 import java.util.Objects;
 
-public class Pessoa {
+public abstract class Pessoa {
 	private String nome;
 	private int idade;
 	private String dataNascimento;
@@ -81,12 +81,16 @@ public class Pessoa {
 				&& Objects.equals(registroGeral, other.registroGeral);
 	}
 	
-	//ToString
-	@Override
-	public String toString() {
-		return "Pessoa [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
-				+ registroGeral + ", numetoCpf=" + numetoCpf + ", nomePai=" + nomePai + ", nomeMae=" + nomeMae + "]";
+	void imprimir() {
+		System.out.println("\nNOme: " + this.nome);
+		System.out.println("Idade: " + this.idade);
+		System.out.println("Data de Nascimento: " + this.dataNascimento);
+		System.out.println("Rg: " + this.registroGeral);
+		System.out.println("CPF: " + this.numetoCpf);
+		System.out.println("Nome do pai: " + this.nomePai);
+		System.out.println("Nome do mae: " + this.nomeMae);
 	}
+	
 	
 	
 	

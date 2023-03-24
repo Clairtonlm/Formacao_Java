@@ -53,7 +53,8 @@ public class Aluno extends Pessoa{
 		this.disciplinas = disciplinas;
 	}
 	
-	//Identifica método sobreescrito da SuperClasse
+	//Identifica método da superClasse e modifico sobreescrevendo
+	//como estar privado uso super.getAlumacoisaquequero();
 	@Override
 	public boolean maiorDeIdade() {
 		
@@ -61,14 +62,11 @@ public class Aluno extends Pessoa{
 	}
 	
 	
-	@Override
-	public String toString() {
-		return "Aluno [matricula=" + matricula + ", dataMatricula=" + dataMatricula + ", serieMatriculado="
-				+ serieMatriculado + ", disciplinas=" + disciplinas + ", getNome()=" + getNome() + ", getIdade()="
-				+ getIdade() + ", getDataNascimento()=" + getDataNascimento() + ", getRegistroGeral()="
-				+ getRegistroGeral() + ", getNumetoCpf()=" + getNumetoCpf() + ", getNomePai()=" + getNomePai()
-				+ ", getNomeMae()=" + getNomeMae() + ", toString()=" + super.toString() + ", getClass()=" + getClass()
-				+ "]";
+	public void imprimir() {
+		super.imprimir();
+		System.out.println("Matricula do Aluno(a): " + this.matricula);
+		
+		
 	}
 	
 	

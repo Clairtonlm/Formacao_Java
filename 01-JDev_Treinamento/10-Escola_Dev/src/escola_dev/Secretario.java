@@ -43,9 +43,11 @@ public class Secretario extends Pessoa {
 		return experiencia == other.experiencia && Objects.equals(nivelCargo, other.nivelCargo)
 				&& Objects.equals(registo, other.registo);
 	}
-	@Override
-	public String toString() {
-		return "Secretario [registo=" + registo + ", nivelCargo=" + nivelCargo + ", experiencia=" + experiencia + "]";
+	public void imprimir() {
+		super.imprimir();
+		System.out.println("Registro : " + this.registo);
+		System.out.println("Nivel Cargo: " + this.nivelCargo);
+		System.out.println("Expetiencia:" + this.experiencia);
 	}
 	
 	

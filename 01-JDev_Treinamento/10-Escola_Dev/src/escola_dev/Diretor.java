@@ -4,8 +4,9 @@ import java.util.Objects;
 
 public class Diretor extends Pessoa {
 	private String registroEducacao;
-	private int tempoDirecao;
+	private int tempoDirecao= 3;
 	private String titulacao;
+	
 	
 	//Metodos Getters e Setters
 	public String getRegistroEducacao() {
@@ -42,10 +43,11 @@ public class Diretor extends Pessoa {
 		return Objects.equals(registroEducacao, other.registroEducacao)
 				&& Objects.equals(tempoDirecao, other.tempoDirecao) && Objects.equals(titulacao, other.titulacao);
 	}
-	@Override
-	public String toString() {
-		return "Diretor [registroEducacao=" + registroEducacao + ", tempoDirecao=" + tempoDirecao + ", titulacao="
-				+ titulacao + "]";
+	public void imprimir() {
+		super.imprimir();
+		System.out.println("Registro de Educação: " + this.registroEducacao);
+		System.out.println("Tempo de Direção: " + this.tempoDirecao);
+		System.out.println("Titulaçõa: " + this.titulacao);
 	}
 	
 	
