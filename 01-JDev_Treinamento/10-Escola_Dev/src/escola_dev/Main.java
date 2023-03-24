@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Pessoa aluno = new Aluno();
+		Aluno aluno = new Aluno();
 		aluno.setNome("Zord de Marte");
 		aluno.setIdade(22);
 		aluno.setDataNascimento("02/07/2009");
@@ -12,19 +12,23 @@ public class Main {
 		aluno.setNumetoCpf("002.003.004-09");
 		aluno.setNomePai("Chico da Silva");
 		aluno.setNomeMae("Naria da Rocha");
+		aluno.setMatricula("000005");
 		
 		
 		
 		
 		
-		Pessoa diretor = new Diretor();
+		
+		Diretor diretor = new Diretor();
 		diretor.setNome("Jeronimo");
 		diretor.setIdade(56);
+		diretor.setTitulacao("3 anos");
 		
 		
-		Pessoa secretario = new Secretario();
+		Secretario secretario = new Secretario();
 		secretario.setNome("Theo");
 		secretario.setIdade(23);
+		secretario.setRegisto("9876945786");
 		
 		System.out.println("----Imprimindo dados------");
 		aluno.imprimir();
