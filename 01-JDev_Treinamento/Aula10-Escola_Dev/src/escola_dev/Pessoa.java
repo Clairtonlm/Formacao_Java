@@ -4,13 +4,15 @@ import java.util.Objects;
 
 public abstract class Pessoa {
 	private String nome;
-	private int idade;
+	private int    idade;
 	private String dataNascimento;
 	private String registroGeral;
 	private String numetoCpf;
 	private String nomePai;
 	private String nomeMae;
 	
+	//Metodo abstract--> sempre escrito pelas clases filhas
+	public abstract double salario();
 	
 	//Metodos Getters e Setters
 	public String getNome() {

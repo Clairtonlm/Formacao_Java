@@ -49,6 +49,11 @@ public class Diretor extends Pessoa {
 		System.out.println("Tempo de Direção: " + this.tempoDirecao);
 		System.out.println("Titulaçõa: " + this.titulacao);
 	}
+	@Override
+	public double salario() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	
 	

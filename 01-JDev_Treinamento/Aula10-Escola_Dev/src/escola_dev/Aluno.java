@@ -68,6 +68,11 @@ public class Aluno extends Pessoa{
 		
 		
 	}
+	@Override
+	public double salario() {
+		
+		throw new UnsupportedOperationException("Unimplemented method 'salario'");
+	}
 	
 	
 	

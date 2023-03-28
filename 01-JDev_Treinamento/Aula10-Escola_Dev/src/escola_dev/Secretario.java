@@ -49,6 +49,11 @@ public class Secretario extends Pessoa {
 		System.out.println("Nivel Cargo: " + this.nivelCargo);
 		System.out.println("Expetiencia:" + this.experiencia);
 	}
+	@Override
+	public double salario() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	
 }
