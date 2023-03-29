@@ -23,6 +23,7 @@ public class Main {
 		diretor.setNome("Jeronimo");
 		diretor.setIdade(56);
 		diretor.setTitulacao("3 anos");
+		diretor.salario();
 		
 		
 		Secretario secretario = new Secretario();
@@ -34,11 +35,14 @@ public class Main {
 		aluno.imprimir();
 		diretor.imprimir();
 		secretario.imprimir();
+		System.out.println(diretor.salario());
 		
 		System.out.println("\n---Testar se é maior de idade---");
 		System.out.println(aluno.maiorDeIdade());
 		System.out.println(diretor.maiorDeIdade());
 		System.out.println(secretario.maiorDeIdade());
+		
+		
 
 	}
 
