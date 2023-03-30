@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
+import classesauxiliares.FuncaoAutenticacao;
+
 public class TelaLogin {
 
 	public static void main(String[] args) {
@@ -15,6 +17,8 @@ public class TelaLogin {
 		String senha = input.next();*/
 		String login = JOptionPane.showInputDialog("Informe seu login de usuário");
 		String senha = JOptionPane.showInputDialog("Informe a senha de usuário");
+		
+		FuncaoAutenticacao autenticacao = new FuncaoAutenticacao();
 		
 		
 		

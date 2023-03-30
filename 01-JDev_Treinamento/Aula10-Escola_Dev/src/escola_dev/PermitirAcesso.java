@@ -4,6 +4,7 @@ public interface PermitirAcesso {
 	
 	//public boolean autenticar();
 	public boolean autenticar(String login, String senha);
+	public boolean autenticar();
 }
 /*
  * 1-criar a interface

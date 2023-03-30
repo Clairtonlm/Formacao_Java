@@ -64,10 +64,16 @@ public class Secretario extends Pessoa implements PermitirAcesso {
 		
 		return login.equals("admin") && senha.equals("admin");
 	}*/
+	
 	@Override
 	public boolean autenticar(String login, String senha) {
 		
 		return login.equals("admin") && senha.equals("admin");
+	}
+	
+	@Override
+	public boolean autenticar() {
+		return false;
 	}
 	
 	
