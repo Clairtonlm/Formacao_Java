@@ -10,6 +10,6 @@ public class NumeroNegativoException extends RuntimeException{
 	}
 	@Override
 	public String getMessage() {
-		return String.format("O atributo %s está negativo ", nomeDoAtributo);
+		return String.format("O atributo %s está vazio ", nomeDoAtributo);
 	}
 }
