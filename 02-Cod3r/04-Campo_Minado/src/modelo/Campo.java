@@ -19,7 +19,9 @@ public class Campo {
 		this.coluna = coluna;
 	}
 	
-	boolean adicionarVizinho(Campo vizinho)}
+	boolean adicionarVizinho(Campo vizinho) {
+		
+	}
 
-}
+}//fim da classe campo
 
