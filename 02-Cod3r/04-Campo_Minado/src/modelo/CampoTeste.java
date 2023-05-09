@@ -82,4 +82,22 @@ public class CampoTeste {
 		campo.alternarMarcacao();
 		assertFalse(campo.isMarcado());
 	}
+	@Test
+	void testeAbrirNaoMinadoNaoMarcado() {
+		assertTrue(campo.abrir());
+	}
+	@Test
+	void testeAbrirNaoMinadoMarcado() {
+		campo.alternarMarcacao();
+		campo.minar();
+		assertFalse(campo.abrir());
+	}
+//	@Test
+//	void testeAbrirMinadoNaoMarcado() {
+//		campo.minar();
+//		assertThrows(ExplosaoException.class, ()->{
+//			campo.abrir();
+//		});
+//		
+//	}
 }//fim da classe
