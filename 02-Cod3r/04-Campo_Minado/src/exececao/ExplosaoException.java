@@ -1,5 +1,5 @@
 package exececao;
 
-public class ExplosaoException {
-
-}
+public class ExplosaoException extends RuntimeException {
+	private static final long serialVersionUID = 1L;
+}//Fim da classe

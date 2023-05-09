@@ -67,4 +67,19 @@ public class CampoTeste {
 		//metodo para testar o resultados se é TRUE ou FALSE, nesse caso quero que seja FALSE
 		assertFalse(resultado);
 	}
+	@Test
+	void testeValorPadraoAtributoMarcado() {
+		assertFalse(campo.isMarcado());
+	}
+	@Test
+	void testeAlternaMarcado() {
+		campo.alternarMarcacao();
+		assertTrue(campo.isMarcado());
+	}
+	@Test
+	void testeAlternaMarcacaoDuasChaamadas() {
+		campo.alternarMarcacao();
+		campo.alternarMarcacao();
+		assertFalse(campo.isMarcado());
+	}
 }//fim da classe

@@ -3,6 +3,8 @@ package modelo;
 import java.util.ArrayList;
 import java.util.List;
 
+import exececao.ExplosaoException;
+
 public class Campo {
 	private final int linha;
 	private final int coluna;
@@ -37,6 +39,38 @@ public class Campo {
 			return true;
 		}else
 			return false;
+	}
+	//criar a função de marcar e desmarcar o bloco
+	void alternarMarcacao() {
+		if(!aberto) {
+			marcado = !marcado;
+		}
+	}
+	//criar função para abri o campo que por padrão estar fechado
+	
+	boolean abrir() {
+		if(!aberto && !marcado) {
+			aberto = true;
+			
+			if(minado) {
+				throw new ExplosaoException();
+			}
+			if(vizinhacaSegura()) {
+				vizinhos.forEach(v -> v.abrir());
+			}
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+	
+	//criar metodo da vizinhaça segura que abre nos lados dos blocos
+	boolean vizinhacaSegura() {
+		return vizinhos.stream().noneMatch(v -> v.minado);
+	}
+	public boolean isMarcado() {
+		return	marcado;
 	}
 
 }//fim da classe campo
