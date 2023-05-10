@@ -77,6 +77,13 @@ public class Campo {
 	public boolean isMarcado() {
 		return	marcado;
 	}
+	
 
+	
+
+	public boolean isAberto() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }//fim da classe campo
 
