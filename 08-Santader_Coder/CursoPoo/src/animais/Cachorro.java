@@ -1,22 +1,13 @@
 package animais;
 
-public class Cachorro {
+public class Cachorro extends Animal {
     //atributos
-    private String      nome;
-    private String      cor;
-    private int         altura;
-    private double      peso;
-    private String      estadoDeEspirito;
+    static int numeroDeCachorros;
 
 
     
 // metodos semretorno
-public void comer() {
-    System.out.println("Comeu ração");
-}
-public void latir() {
-    System.out.println("AU AU");
-}
+
 
 //metodo com retorno. e o retorno tem que ser do mesmo tipo
 public String pegar(){
@@ -67,19 +58,9 @@ public void setNome(String nome) {
         this.cor = cor;
     }
 
-    /**
-     * @return int return the altura
-     */
-    public int getAltura() {
-        return altura;
-    }
+    
 
-    /**
-     * @param altura the altura to set
-     */
-    public void setAltura(int altura) {
-        this.altura = altura;
-    }
+    
 
     /**
      * @return double return the peso
@@ -109,4 +90,9 @@ public void setNome(String nome) {
         this.estadoDeEspirito = estadoDeEspirito;
     }
 
+    @Override
+    public void soar() {
+       System.out.println("Auau");
+       
+    }
 }
