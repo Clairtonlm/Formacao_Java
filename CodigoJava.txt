@@ -1,0 +1,41 @@
+Microsoft Windows [versão 10.0.19045.2965]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\java-codigo>ls
+'ls' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\java-codigo>javac Programa.java
+
+C:\java-codigo>java programa
+Error: Could not find or load main class programa
+Caused by: java.lang.NoClassDefFoundError: Programa (wrong name: programa)
+
+C:\java-codigo>type
+A sintaxe do comando está incorreta.
+
+C:\java-codigo>type Programa.java
+class Programa{
+        public static void main(String[] args){
+                System.out.println("Ola Mundo");
+        }
+}
+C:\java-codigo>javac Programa.java
+
+C:\java-codigo>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é 560E-22A9
+
+ Pasta de C:\java-codigo
+
+06/06/2023  22:45    <DIR>          .
+06/06/2023  22:45    <DIR>          ..
+06/06/2023  22:46               419 Programa.class
+06/06/2023  22:44               100 Programa.java
+               2 arquivo(s)            519 bytes
+               2 pasta(s)   88.873.701.376 bytes disponíveis
+
+C:\java-codigo>java Programa
+Ola Mundo
+
+C:\java-codigo>
