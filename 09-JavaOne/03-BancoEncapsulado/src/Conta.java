@@ -5,7 +5,7 @@ public class Conta {
 	private double saldo;
 	private double agencia;
 	private int numero;
-	Cliente titular;//titular é do tipo cliente que é uma classe
+	private Cliente titular;//titular é do tipo cliente que é uma classe
 	//Cliente titular = new Cliente();
 	
 	//Metodos
@@ -31,9 +31,29 @@ public class Conta {
 			return false;
 		}
 	}
-	//Getts
+	//Getts e Seters
 	public double getSaldo() {
 		return this.saldo;
+	}
+	
+	public int getNumero() {
+		return this.numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+		//pode fazer validações aqui dentro do set
+	}
+	public double getAgencia() {
+		return this.agencia;
+	}
+	public void setAgencia(double agencia) {
+		this.agencia = agencia;
+	}
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	public Cliente getTitular() {
+		return titular;
 	}
 	
 }
