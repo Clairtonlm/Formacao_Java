@@ -2,10 +2,11 @@
 
 public class Conta {
 	//atributos
-	double saldo;
+	private double saldo;
 	double agencia;
 	int numero;
 	Cliente titular;//titular é do tipo cliente que é uma classe
+	//Cliente titular = new Cliente();
 	
 	//Metodos
 	 public void deposita( double valor){
@@ -29,5 +30,9 @@ public class Conta {
 		}else {
 			return false;
 		}
+	}
+	//Getts
+	public double getSaldo() {
+		return this.saldo;
 	}
 }
