@@ -16,7 +16,6 @@ public class TestaGetSet {
 		
 		System.out.println(conta.getTitular().getNome());
 		conta.getTitular().setProfissao("Designer");
-		System.out.println(conta.getTitular().getProfissao());
 		
 
 	}
