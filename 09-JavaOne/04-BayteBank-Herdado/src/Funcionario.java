@@ -32,7 +32,7 @@ public class Funcionario {
 		 System.out.println("Nome: " + this.nome);
 		 System.out.println("Cpf: " + this.cpf);
 		 System.out.println("Salario: " + this.salario);
-		 System.out.println("Bonificação: " + this.getBonificacao());
+		 System.out.println("Bonificação:" +    this.getBonificacao());
 		 System.out.println("------------------------------------");
 	 }
 		
