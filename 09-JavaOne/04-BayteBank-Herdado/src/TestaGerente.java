@@ -2,6 +2,7 @@
 public class TestaGerente {
 
 	public static void main(String[] args) {
+		
 		Gerente g1 = new Gerente();
 		g1.setNome("Ray sacarose");
 		g1.setCpf("005.007.009-67");
