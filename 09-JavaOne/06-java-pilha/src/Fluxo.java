@@ -10,8 +10,10 @@ public class Fluxo {
 		System.out.println("Ini do metodo1");
 		try {
 			metodo2();
-		}catch(ArithmeticException ex) {
-			System.out.println("ArithmeticException");
+		}catch(ArithmeticException | NullPointerException ex) {
+			ex.printStackTrace();
+			String msg = ex.getMessage();
+			System.out.println("Exceção" + msg);
 		}
 		
 		System.out.println("Fim do medoto1");
@@ -21,7 +23,8 @@ public class Fluxo {
 		for(int i = 1; i <= 5; i++) {
 			System.out.println(i);
 			int a = i / 0;
-			
+			//Conta c = null;
+			//c.deposita();
 		}
 		System.out.println("Fim do medoto2");
 	}
