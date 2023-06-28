@@ -1,5 +1,5 @@
 
-public class Fluxo {
+public class FluxoComTratamento {
 
 	public static void main(String[] args) {
 		System.out.println("Inicio do main");
