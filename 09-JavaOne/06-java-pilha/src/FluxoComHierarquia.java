@@ -5,7 +5,7 @@ public class FluxoComHierarquia {
 		System.out.println("Inicio do main");
 		try {
 			metodo1();
-		}catch(ArithmeticException | NullPointerException |MinhaExcecao2 ex) {
+		}catch(Exception ex) {
 			String msg = ex.getMessage();
 			System.out.println("Exception " + msg);
 			ex.printStackTrace();
