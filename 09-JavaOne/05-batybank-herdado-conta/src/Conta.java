@@ -24,23 +24,30 @@ public abstract class Conta {
 	//Metodos
 	 public abstract void deposita( double valor);
 	 
-	public boolean saca(double valor){
-		 if(this.saldo >= valor) {
-			 this.saldo -= valor;
-			 return true;
-		 }else {
-			 return false;
+	//Vamos refatorar esse codigo usando Excecao logo abaixo
+//	public boolean saca(double valor){
+//		 if(this.saldo >= valor) {
+//			 this.saldo -= valor;
+//			 return true;
+//		 }else {
+//			 return false;
+//		 }
+//	 }
+	 
+	public void saca(double valor)  {
+		
+		 if(this.saldo < valor)  {
+//se o saldo é menor que valor temos um problema vamos lançar uma exceção
+			throw new SaldoInsuficienteException ("Saldo " + this.saldo + ",Valor" + valor);
+					
+			
 		 }
+		 this.saldo -= valor;
 	 }
-	public boolean transfere(double valor, Conta destino) {
-		if(this.saldo >= valor) {
-			this.saldo -= valor;
-			//destisno.saldo += valor;(ou pode ser usando o metodo)
-			destino.deposita(valor);
-			return true;
-		}else {
-			return false;
-		}
+	
+	public void transfere(double valor, Conta destino) throws Exception {
+		this.saca(valor);
+		destino.deposita(valor);
 	}
 	//Getts e Seters
 	public double getSaldo() {
