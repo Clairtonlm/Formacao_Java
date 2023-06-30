@@ -34,18 +34,18 @@ public abstract class Conta {
 //		 }
 //	 }
 	 
-	public void saca(double valor)  {
+	public void saca(double valor) throws SaldoInsuficienteException  {
 		
 		 if(this.saldo < valor)  {
 //se o saldo é menor que valor temos um problema vamos lançar uma exceção
-			throw new SaldoInsuficienteException ("Saldo " + this.saldo + ",Valor" + valor);
+			throw new SaldoInsuficienteException ("Seu Saldo é :R$" + this.saldo + ", Valor solicitado para saque é :R$ " + valor);
 					
 			
 		 }
 		 this.saldo -= valor;
 	 }
 	
-	public void transfere(double valor, Conta destino) throws Exception {
+	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException {
 		this.saca(valor);
 		destino.deposita(valor);
 	}

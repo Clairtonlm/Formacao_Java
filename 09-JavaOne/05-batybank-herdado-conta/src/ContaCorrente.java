@@ -6,8 +6,8 @@ public class ContaCorrente extends Conta implements Tributavel{
 	}
 	
 	@Override
-	public void saca(double valor) {
-		double valorAsacar = valor + 1;
+	public void saca(double valor) throws SaldoInsuficienteException {
+		double valorAsacar = valor + 0.2;
 		super.saca(valorAsacar);
 	}
 
