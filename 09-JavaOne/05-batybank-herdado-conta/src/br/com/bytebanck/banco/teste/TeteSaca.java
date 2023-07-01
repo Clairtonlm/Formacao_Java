@@ -1,4 +1,5 @@
-
+package br.com.bytebanck.banco.teste;
+import br.com.bytebanck.banco.modelo.*;
 public class TeteSaca {
 
 	public static void main(String[] args)  {

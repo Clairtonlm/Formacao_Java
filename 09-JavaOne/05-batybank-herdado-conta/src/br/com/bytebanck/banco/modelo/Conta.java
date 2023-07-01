@@ -1,4 +1,5 @@
-
+package br.com.bytebanck.banco.modelo;
+import br.com.bytebanck.banco.modelo.*;
 
 public abstract class Conta {
 	//atributos
