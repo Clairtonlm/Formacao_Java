@@ -15,6 +15,11 @@ public abstract class Conta {
 	public Conta() {
 		
 	}
+	/**
+	 * Construtor para inicializar um objeto do tipo conta.
+	 * @param agencia
+	 * @param numero
+	 */
 	public Conta(int agencia, int numero) {
 		Conta.total++;
 		System.out.println("O total de conta é " + Conta.total);
