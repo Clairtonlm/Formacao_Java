@@ -16,6 +16,12 @@ public class TesteArrayDeReferencia {
 		contas[1] = cc2;
 		//System.out.println(cc2.getNumero());
 		System.out.println(contas[1].getNumero());
+		
+		ContaCorrente ref = contas[0];
+		ContaCorrente ref2 = contas[1];
+		System.out.println(ref.getAgencia());
+		System.out.println(ref2.getAgencia());
+	
 	}
 
 }
