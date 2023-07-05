@@ -14,6 +14,9 @@ public class TesteContas {
 		cc.transfere(10, cp);
 		System.out.println("Conta Corrente " + cc.getSaldo());
 		System.out.println("Conta Poupança " + cp.getSaldo());
+		
+		System.out.println(cc);
+		System.out.println(cp);
 
 	}
 
