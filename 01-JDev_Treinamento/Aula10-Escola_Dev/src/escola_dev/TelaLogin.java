@@ -1,7 +1,5 @@
 package escola_dev;
 
-import java.util.Scanner;
-
 import javax.swing.JOptionPane;
 
 import classesauxiliares.FuncaoAutenticacao;
