@@ -9,7 +9,7 @@ public class Teste {
 
 	public static void main(String[] args) {
 		
-		ArrayList lista = new ArrayList();
+		ArrayList<Conta> lista = new ArrayList<Conta>();
 		
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
@@ -24,6 +24,8 @@ public class Teste {
 		
 		lista.remove(0);
 		System.out.println("Tamanho: " + lista.size());
+		Conta ref1 = (Conta)lista.get(0);
+		System.out.println(((Conta) ref).getNumero());
 		
 		Conta cc3 = new ContaCorrente(33, 13);
 		lista.add(cc3);
@@ -36,8 +38,8 @@ public class Teste {
 			System.out.println(oRef);
 		}
 		
-		for(Object oRef : lista) {
-			System.out.println(oRef);
+		for(Object conta : lista) {
+			System.out.println(conta);
 		}
 	}
 
