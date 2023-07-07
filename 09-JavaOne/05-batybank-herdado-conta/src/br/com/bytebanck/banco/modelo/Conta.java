@@ -1,5 +1,4 @@
 package br.com.bytebanck.banco.modelo;
-import br.com.bytebanck.banco.modelo.*;
 
 public abstract class Conta {
 	//atributos
@@ -21,8 +20,8 @@ public abstract class Conta {
 	 * @param numero
 	 */
 	public Conta(int agencia, int numero) {
-		Conta.total++;
-		System.out.println("O total de conta é " + Conta.total);
+		//Conta.total++;
+		//System.out.println("O total de conta é " + Conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
 	}
@@ -90,6 +89,21 @@ public abstract class Conta {
 	public static int getTotal() {
 		return Conta.total;
 	}
+	//equals
+	
+	public boolean ehIgual(Conta outra) {
+		if(this.agencia != outra.agencia) {
+			return false;
+		}
+		if(this.numero != outra.numero) {
+			return false;
+		}
+		return true;
+	}
+	
+	
+	
+	
 	
 	@Override
 	public String toString() {
