@@ -19,6 +19,7 @@ public class TesteArrayDeReferencia {
 		
 		ContaCorrente ref = contas[0];
 		ContaCorrente ref2 = contas[1];
+		
 		System.out.println(ref.getAgencia());
 		System.out.println(ref2.getAgencia());
 	
