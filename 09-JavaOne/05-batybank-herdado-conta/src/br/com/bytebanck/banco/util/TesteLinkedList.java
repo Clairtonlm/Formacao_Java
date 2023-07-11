@@ -1,15 +1,15 @@
 package br.com.bytebanck.banco.util;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 import br.com.bytebanck.banco.modelo.Conta;
 import br.com.bytebanck.banco.modelo.ContaCorrente;
 
-public class TesteArrayList {
+public class TesteLinkedList {
 
 	public static void main(String[] args) {
 		
-		LinkedList<Conta> lista = new LinkedList<Conta>();
+		ArrayList<Conta> lista = new ArrayList<Conta>();
 		
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
