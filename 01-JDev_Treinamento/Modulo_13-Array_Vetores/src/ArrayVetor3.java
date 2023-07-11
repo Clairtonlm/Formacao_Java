@@ -29,4 +29,4 @@ public class ArrayVetor3 {
 		}
 		
 	}//fim main
-}
+}//fim da classe
