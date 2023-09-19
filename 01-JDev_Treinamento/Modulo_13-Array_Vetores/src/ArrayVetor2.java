@@ -11,7 +11,7 @@ public class ArrayVetor2 {
 		double[] notas = new double[Integer.parseInt(posicoes)];
 		
 		for(int pos = 0; pos < notas.length; pos++) {
-			String valor = JOptionPane.showInputDialog("Qual o valor da posição = " + (pos + 1));
+			String valor = JOptionPane.showInputDialog("Qual o valor da posição  " + (pos + 1));
 			notas[pos] = Double.valueOf(valor);
 			System.out.println("Nota " + (pos + 1) + " é = " + notas[pos]);
 		}
