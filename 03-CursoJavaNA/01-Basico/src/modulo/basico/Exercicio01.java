@@ -4,10 +4,10 @@ import java.util.Locale;
 
 public class Exercicio01 {
 
-	public static void main(String[] args) {
+	public static <String> void main(String[] args) {
 		
-		String product1 = "Computer";
-		String product2 = "Office Desk";
+		String product1 = (String) "Computer";
+		String product2 = (String) "Office Desk";
 		
 		int age = 30;
 		int code = 5290;
