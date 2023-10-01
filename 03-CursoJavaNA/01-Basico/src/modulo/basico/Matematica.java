@@ -9,7 +9,7 @@ public class Matematica {
 		double A, B, C;
 		
 		A = Math.sqrt(x);
-		C = Math.pow(x, y);C
+		C = Math.pow(x, y);
 		
 		System.out.println(A);
 		System.out.println(C);
