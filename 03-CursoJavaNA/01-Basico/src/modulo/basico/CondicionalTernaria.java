@@ -6,9 +6,9 @@ public class CondicionalTernaria {
 		// Sintaxe
 		// (condição) ? valor_se_verdadeiro : valor se falso;
 		
-		double preco = 35;
+		double preco = 34.5;
 		//aplicando condição Ternaria
-		double desconto = (preco <= 20)? preco * 0.1 : preco * 0.85;
+		double desconto = (preco < 20.0)? preco * 0.1 : preco * 0.05;
 		//jeito normal de fazer
 //		if(preco <= 20.0) {
 //			desconto = preco * 0.1;
