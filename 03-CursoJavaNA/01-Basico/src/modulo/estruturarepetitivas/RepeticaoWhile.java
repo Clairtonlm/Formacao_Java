@@ -12,8 +12,8 @@ public class RepeticaoWhile {
 		int x = sc.nextInt();
 		int soma = 0;
 		
-		while(x != 0) {
-			soma = soma + x;
+		while(x != 0) {//enquando x for diferente de zeo
+			soma = soma + x;//va somando aqui
 			System.out.println("Digite o número");
 			x = sc.nextInt();
 		}
