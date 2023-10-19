@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import entities.Triangle;
 
-public class Program {
+public class ProgramV2 {
 
 	public static void main(String[] args) {
 		
@@ -23,11 +23,11 @@ public class Program {
 	        y.b = sc.nextDouble();
 	        y.c = sc.nextDouble();
 
-	        double pX = (x.a + x.b + x.c) / 2.0;
-	        double areaX = Math.sqrt(pX * (pX - x.a) * (pX - x.b) * (pX - x.c));
+	      
+	        double areaX = x.area();
 
-	        double pY = (y.a + y.b + y.c) / 2.0;
-	        double areaY = Math.sqrt(pY * (pY - y.a) * (pY - y.b) * (pY - y.c));
+	       
+	        double areaY = y.area();
 
 	        System.out.println("Area of triangle X: " + areaX);
 	        System.out.println("Area of triangle Y: " + areaY);
