@@ -24,5 +24,6 @@ public class Produto {
 				+ " unidade(s), Total : $ "
 				+ String.format("%.2f", totalEmEstoque());
 				
+				
 	}
 }
