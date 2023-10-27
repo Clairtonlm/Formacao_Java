@@ -1,4 +1,4 @@
-package executor;
+package orientacaoObjetos;
 
 public class Produto {
 	public String nome;
