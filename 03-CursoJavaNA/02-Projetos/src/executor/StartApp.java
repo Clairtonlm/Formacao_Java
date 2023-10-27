@@ -9,16 +9,18 @@ public class StartApp {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		Produto produto = new Produto();
+		
 		System.out.println("Vamos cadastar novo produto");
 		System.out.println("Nome do Produto");
-		produto.nome = sc.nextLine();
+		String nome = sc.nextLine();
 		
 		System.out.println("Preço do Produto");
-		produto.preco = sc.nextDouble();
+		double preco = sc.nextDouble();
 		
 		System.out.println("Quantidade do Produto");
-		produto.quantidade = sc.nextInt();
+		int quantidade = sc.nextInt();
+		
+		Produto produto = new Produto();
 		
 		System.out.println();
 		System.out.println(produto.toString());
