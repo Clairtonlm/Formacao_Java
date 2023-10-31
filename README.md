@@ -28,7 +28,7 @@ Repositório voltado para estudo e práticas da linguagem Java. Onde uso para tr
    - O que é herança
    - O que é polimorfismo
    - Como funcionam interfaces
-   - O que são abstrações
+   - O que são abstrações em java
 - [ ] **Java - Manipulação de Erros**:
    - O tratamento de erros refere-se aos procedimentos de resposta e recuperação de condições de erro presentes em um aplicativo de software. Em outras palavras, é o processo composto de antecipação, detecção e resolução de erros de aplicação, de programação ou de comunicação.
    - Tratar exceções pré-definidas
