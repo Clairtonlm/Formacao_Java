@@ -1,7 +1,7 @@
 package orientacaoObjetos;
 
 public class Produto {
-	public String nome;
+	private String nome;
 	public double preco;
 	public int quantidade;
 	
