@@ -25,6 +25,6 @@ public class AluraPessoas {
 		System.out.printf("A altura media é: %.2f%n", media);
 		
 		sc.close();
-	}
+	}//main
 
-}
+}//classe 

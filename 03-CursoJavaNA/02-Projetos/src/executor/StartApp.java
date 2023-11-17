@@ -2,7 +2,7 @@ package executor;
 
 import java.util.Scanner;
 
-import app.Produto;
+import app.Produto2;
 
 public class StartApp {
 
@@ -20,7 +20,7 @@ public class StartApp {
 		System.out.println("Quantidade do Produto");
 		int quantidade = sc.nextInt();
 		
-		Produto produto = new Produto();
+		Produto2 produto = new Produto2();
 		
 		System.out.println();
 		System.out.println(produto.toString());
