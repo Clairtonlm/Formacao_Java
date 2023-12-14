@@ -1,5 +1,10 @@
 package padrao;
-
+/*
+ * Escreva um programa em Java que solicita ao usuário o número de alunos em uma turma.
+ *  Para cada aluno, o programa deve solicitar suas notas em três provas e calcular a média. 
+ * No final, o programa deve imprimir a média da turma.
+ * 
+ * */
 import java.util.Scanner;
 
 public class MediaTurma {
