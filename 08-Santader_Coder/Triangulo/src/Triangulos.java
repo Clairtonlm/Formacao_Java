@@ -5,11 +5,11 @@ public class Triangulos {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Digite a altura dos triângulos: ");
-        int altura = scanner.nextInt();
+        int alturaDoTriagulo = scanner.nextInt();
 
         System.out.println("Triângulo retângulo:");
-        for (int linha = 1; linha <= altura; linha++) {
-            for (int coluna = 1; coluna <= linha; coluna++) {
+        for (int linha = 1; linha <= alturaDoTriagulo; linha++) {
+            for (int baseDotriangulo = 1; baseDotriangulo <= linha; baseDotriangulo++) {
                 System.out.print("* ");
             }
             System.out.println();
@@ -17,8 +17,8 @@ public class Triangulos {
 
         System.out.println(); 
 
-        for (int linha = altura; linha >= 1; linha--) {
-            for (int coluna = 1; coluna <= linha; coluna++) {
+        for (int linha = alturaDoTriagulo; linha >= 1; linha--) {
+            for (int baseDotriangulo = 1; baseDotriangulo <= linha; baseDotriangulo++) {
                 System.out.print("* ");
             }
             System.out.println();
