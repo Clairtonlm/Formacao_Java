@@ -23,7 +23,7 @@ public class CalculoSalario {
         
         scanner.close();
     }
-    
+    //Metodo estaticos para calculos
     public static double calcularINSS(double salario) {
         if (salario <= 1212.00) {
             return salario * 0.075;
@@ -50,6 +50,8 @@ public class CalculoSalario {
         } else {
             return (salario * 0.275) - 869.36;
         }
+        
     }
+    
 }
 
