@@ -47,7 +47,7 @@ public class Alturas {
 		
 		//imprimir os nomes das pessoas que tem < 16 anos
 		for(int i=0; i<n; i++) {
-			if(idades[1] < 16) {
+			if(idades[i] < 16) {
 				System.out.println(nomes[i]);
 			}
 		}
