@@ -8,7 +8,7 @@ public class OperadoresRelacionais {
 		int num2 = 10;
 		
 		if(num1 == num2) {
-			System.out.println(" Números são iguais");
+			System.out.println("Números são iguais");
 		}else if(num1 != num2){
 			System.out.println("Ganhou mais ");
 		
