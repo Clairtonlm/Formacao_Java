@@ -1,6 +1,6 @@
 package logicaComJava;
 
-public class OperadoresLogicos {
+public class OperadoresLogicos03 {
 
 	public static void main(String[] args) {
 		

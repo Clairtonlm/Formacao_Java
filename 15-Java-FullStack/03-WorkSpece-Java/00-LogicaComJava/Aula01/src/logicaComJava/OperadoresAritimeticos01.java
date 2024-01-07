@@ -1,6 +1,6 @@
 package logicaComJava;
 
-public class OperadoresAritimeticos {
+public class OperadoresAritimeticos01 {
 
 	public static void main(String[] args) {
 		
