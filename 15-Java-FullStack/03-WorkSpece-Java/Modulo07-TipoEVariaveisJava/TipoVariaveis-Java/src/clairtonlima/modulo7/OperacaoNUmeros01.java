@@ -6,7 +6,10 @@ public class OperacaoNUmeros01 {
 
 	public static void main(String[] args) {
 		System.out.println("Calculando notas");
+		
+		 
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Digite a nota 1");
 		double nota1 = sc.nextDouble();
 		System.out.println("Digite a nota 2");
@@ -25,6 +28,8 @@ public class OperacaoNUmeros01 {
 			System.out.println("Resultado invalido");
 		}
 		System.out.println("Média das notas: " + media);
+		
+		sc.close();
 	}
 
 }
