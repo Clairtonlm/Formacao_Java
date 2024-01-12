@@ -21,11 +21,11 @@ public class OperacaoNUmeros01 {
 		
 		double media = (nota1 + nota2 + nota3 + nota4)/4;
 		if(media <= 5.9) {
-			System.out.println(" Aluno está de recubeparação");
+			System.out.println("Aluno está de recubeparação " + media);
 		}else if(media >= 6) {
-			System.out.println(" Aluno Aprovado");
+			System.out.println(" Aluno Aprovado " + media);
 		}else {
-			System.out.println("Resultado invalido");
+			System.out.println("Resultado invalido ");
 		}
 		System.out.println("Média das notas: " + media);
 		
