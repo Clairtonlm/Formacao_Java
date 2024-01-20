@@ -13,8 +13,8 @@ public class EstruturaFor {
         System.out.println("Vamos fazer descrescente");
         System.out.println();
         for(int num = 10; num  >= 0; num--){
-            if(num == 7){
-                System.out.println("Encontrei número 7");
+            if(num == 7 || num == 9){
+                System.out.println("Encontrei número " + num);
                 continue;
             }
             System.out.println("O número é :" + (num ));
