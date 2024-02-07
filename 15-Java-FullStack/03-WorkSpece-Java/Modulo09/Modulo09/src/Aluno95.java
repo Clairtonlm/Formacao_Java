@@ -1,11 +1,12 @@
 package Modulo09.Modulo09.src;
 
 public class Aluno95 {
-    String nome;
+     String nome;
     int idade;
     String dataNascimento;
     String cpf;
 
+    //Construtores em Java
     public Aluno95(){//cria os dados na memoria - sendo padrão no java
 
     }
