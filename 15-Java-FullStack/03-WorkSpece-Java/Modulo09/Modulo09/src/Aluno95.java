@@ -111,9 +111,25 @@ public class Aluno95 {
     public String verificaAprovacao2() {
         double media = this.mediaAluno();
         if (media >= 7) {
-            return "Aluno aprovado";
+            return "Aprovado";
         } else {
-            return "Aluno reprovado";
+            return "Reprovado";
         }
+    }
+
+    //to String
+
+    @Override
+    public String toString() {
+        return " Dados do Aluno:" + "\n" +
+                " -nome=> " + nome  + "\n" +
+                " -idade=> " + idade + "\n" +
+                " -dataNascimento=> " + dataNascimento +  "\n" +
+                " -cpf=> " + cpf  + "\n" +
+                " -nota1=> " + nota1 + "\n" +
+                " -nota2=> " + nota2 + "\n" +
+                " -nota3=> " + nota3 + "\n" +
+                " -nota4=> " + nota4 + "\n"
+                ;
     }
 }//fim da classe
