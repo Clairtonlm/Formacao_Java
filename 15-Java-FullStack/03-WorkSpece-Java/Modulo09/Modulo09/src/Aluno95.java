@@ -2,7 +2,7 @@ package Modulo09.Modulo09.src;
 
 public class Aluno95 {
     private String nome;
-    private int    idade;
+    private int idade;
     private String dataNascimento;
     private String cpf;
 
@@ -13,13 +13,15 @@ public class Aluno95 {
 
 
     //Construtores em Java
-    public Aluno95(){//cria os dados na memoria - sendo padrão no java
+    public Aluno95() {//cria os dados na memoria - sendo padrão no java
 
     }
-    public Aluno95(String nomePadrao){
+
+    public Aluno95(String nomePadrao) {
         this.nome = nomePadrao;
     }
-    public Aluno95(String nomePadrao, int idadePadrao){
+
+    public Aluno95(String nomePadrao, int idadePadrao) {
         this.nome = nomePadrao;
         this.idade = idadePadrao;
     }
@@ -88,9 +90,30 @@ public class Aluno95 {
     public void setNota4(double nota4) {
         this.nota4 = nota4;
     }
+
     //Métodos
     /* Metodo que calcula nota do aluno*/
-    public double mediaAluno(){
-        return (nota1 + nota2 + nota3 + nota4)/4;
+    public double mediaAluno() {
+        return (nota1 + nota2 + nota3 + nota4) / 4;
     }
-}//classe
+
+    //metodo que verifica se foi aprovado ou nao
+    public boolean verificaAprovacao() {
+        double media = this.mediaAluno();
+        if (media >= 7) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //metodo Aprovado 2
+    public String verificaAprovacao2() {
+        double media = this.mediaAluno();
+        if (media >= 7) {
+            return "Aluno aprovado";
+        } else {
+            return "Aluno reprovado";
+        }
+    }
+}//fim da classe
