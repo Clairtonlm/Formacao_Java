@@ -129,7 +129,7 @@ public class Aluno95 {
                 " -nota1=> " + nota1 + "\n" +
                 " -nota2=> " + nota2 + "\n" +
                 " -nota3=> " + nota3 + "\n" +
-                " -nota4=> " + nota4 + "\n"
-                ;
+                " -nota4=> " + nota4 + "\n";
+
     }
 }//fim da classe
