@@ -2,7 +2,7 @@ package Modulo09.Modulo09.src;
 
 import javax.swing.*;
 
-public class Main {
+public class MainAluno95 {
     public static void main(String[] args) {
 
         System.out.println("--------Aluno 01--------");
@@ -18,15 +18,28 @@ public class Main {
         aluno1.setDataNascimento(dataNascimento);
         aluno1.setCpf(cpf);
 
+        String disciplina1 = JOptionPane.showInputDialog("Digite a disciplina 01");
         String nota1 = JOptionPane.showInputDialog("Digite a nota 1 do Aluno: ");
+
+        String disciplina2 = JOptionPane.showInputDialog("Digite a disciplina 02");
         String nota2 = JOptionPane.showInputDialog("Digite a nota 2 do Aluno: ");
+
+        String disciplina3 = JOptionPane.showInputDialog("Digite a disciplina 03");
         String nota3 = JOptionPane.showInputDialog("Digite a nota 3 do Aluno: ");
+
+        String disciplina4 = JOptionPane.showInputDialog("Digite a disciplina 04");
         String nota4 = JOptionPane.showInputDialog("Digite a nota 4 do Aluno: ");
+
 
         aluno1.setNota1(Double.parseDouble(nota1));
         aluno1.setNota2(Double.parseDouble(nota2));
         aluno1.setNota3(Double.parseDouble(nota3));
         aluno1.setNota4(Double.parseDouble(nota4));
+
+        aluno1.setDisciplina1(disciplina1);
+        aluno1.setDisciplina2(disciplina2);
+        aluno1.setDisciplina3(disciplina3);
+        aluno1.setDisciplina4(disciplina4);
 
         System.out.println(aluno1.toString());
         System.out.println("A média do Aluno é: " + aluno1.mediaAluno());
