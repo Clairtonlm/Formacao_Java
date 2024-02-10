@@ -68,6 +68,7 @@ public class MainAluno95 {
         System.out.println("--------Aluno 05--------");
         Aluno95 aluno5 = new Aluno95("Maria", 23);
 
+        System.out.println();
         System.out.println("_______FIM_______");
     }
 
