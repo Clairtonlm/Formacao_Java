@@ -2,7 +2,7 @@ package executor;
 
 import java.util.Scanner;
 
-import app.Produto2;
+
 
 public class StartApp {
 
