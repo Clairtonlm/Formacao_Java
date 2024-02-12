@@ -2,6 +2,7 @@ package Modulo09.Modulo09.src;
 
 public class TesteObjeto {
     public static void main(String[] args) {
+
         ComparacaoObjeto pessoa1 = new ComparacaoObjeto();
         pessoa1.setNome("Tadeu");
         pessoa1.setIdade(23);
