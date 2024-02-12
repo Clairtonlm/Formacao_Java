@@ -16,7 +16,7 @@ public class DataHora1 {
 
         DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
         //considerando a hora do computador local do usuario
-        DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
+        DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;//veja a documentação para lembrar
         DateTimeFormatter fmt5 = DateTimeFormatter.ISO_INSTANT;
 
         LocalDate d01 = LocalDate.now();
