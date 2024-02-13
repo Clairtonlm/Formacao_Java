@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Disciplina {
     private String disciplina;
-    protected double nota;
+    private double nota;
 
 
     public String getDisciplina() {
@@ -37,9 +37,7 @@ public class Disciplina {
 
     @Override
     public String toString() {
-        return "Disciplina{" +
-                "disciplina='" + disciplina + '\'' +
-                ", nota=" + nota +
-                '}';
+        return  "disciplina = " + disciplina + "\n" + " nota= " + nota;
+
     }
 }

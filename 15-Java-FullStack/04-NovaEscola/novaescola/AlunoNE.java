@@ -12,7 +12,7 @@ public class AlunoNE {
     private List<Disciplina> disciplinas = new ArrayList<>();
 
     //Construtores em Java
-    public AlunoNE() {//cria os dados na memoria - sendo padrão no java
+    public AlunoNE() {
 
     }
 
@@ -90,9 +90,9 @@ public class AlunoNE {
     public String verificaAprovacao2() {
         double media = this.mediaAluno();
         if (media >= 7) {
-            return "Aprovado";
+            return  "Aluno " + this.getNome() + " está:  APROVADO ";
         } else {
-            return "Reprovado";
+            return "Aluno " + this.getNome() + " está:  REPROVADO ";
         }
     }
 
@@ -104,8 +104,10 @@ public class AlunoNE {
     public String toString() {
         return " Dados do Aluno:" + "\n" +
                 "nome=> " + nome  + "\n" +
-                "idade=> " + matricula + "\n" +
+                "Matricula=> " + matricula + "\n" +
                 "dataNascimento=> " + dataNascimento +  "\n" +
-                "cpf=> " + cpf  + "\n" + "---------------------" + "\n";
+                "cpf=> " + cpf  + "\n"  +"\n"+
+                "Disciplinas do Aluno" + disciplinas + "\n"+
+                " Media do aluno ->>>" + mediaAluno();
     }
 }
