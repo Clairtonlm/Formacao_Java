@@ -1,22 +1,22 @@
 package Enumeracao_ComposicaoJava.entidades;
+/*
 
+ */
 import Enumeracao_ComposicaoJava.enumm.OrderStatus;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.Objects;
 
 public class Order {
     private  Integer Id;
-    private Date date;
+    private Date moment;
     private OrderStatus status;
 
-    public Order(){
 
-    }
 
-    public Order(Integer id, Date date, OrderStatus status) {
+    public Order(Integer id, Date moment, OrderStatus status) {
         Id = id;
-        this.date = date;
+        this.moment = moment;
         this.status = status;
     }
 
@@ -29,11 +29,11 @@ public class Order {
     }
 
     public Date getDate() {
-        return date;
+        return moment;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(Date moment) {
+        this.moment = moment;
     }
 
     public OrderStatus getStatus() {
@@ -60,7 +60,7 @@ public class Order {
     public String toString() {
         return "Order" + "\n" +
                 "Id =" + this.Id + "\n" +
-                "date =" + this.date + "\n" +
+                "date =" + this.moment + "\n" +
                 "status =" + this.status
                 ;
     }
