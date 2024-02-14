@@ -3,6 +3,7 @@ package novaescola;
 import java.util.Objects;
 
 public class Disciplina {
+
     private String disciplina;
     private double nota;
 
@@ -37,7 +38,7 @@ public class Disciplina {
 
     @Override
     public String toString() {
-        return  "disciplina = " + disciplina + "\n" + " nota= " + nota;
+        return "disciplina = " + disciplina + "\n" + " nota= " + nota;
 
     }
 }

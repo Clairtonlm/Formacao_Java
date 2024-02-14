@@ -25,6 +25,14 @@ public class AlunoNE {
         this.matricula = matricula;
     }
 
+    public AlunoNE(String nome, int matricula, String dataNascimento, String cpf) {
+        this.nome = nome;
+        this.matricula = matricula;
+        this.dataNascimento = dataNascimento;
+        this.cpf = cpf;
+
+    }
+
     //Getters e Setters
     public String getNome() {
         return nome;
@@ -89,16 +97,17 @@ public class AlunoNE {
     //metodo Aprovado 2
     public String verificaAprovacao2() {
         double media = this.mediaAluno();
-        if (media >= 7) {
-            return  "Aluno " + this.getNome() + " está:  APROVADO ";
-        } else {
-            return "Aluno " + this.getNome() + " está:  REPROVADO ";
+        if (media >= 5) {
+            if (media >= 7) {
+                return "Status do Aluno " + this.getNome() + " :  APROVADO ";
+            } else {
+                return "Status do Aluno " + this.getNome() + " :  RECUPERÇÃO ";
+            }
+        }else{
+            return "Status do Aluno " + this.getNome() + " :  REPROVADO ";
         }
+
     }
-
-
-
-
     //to String
     @Override
     public String toString() {

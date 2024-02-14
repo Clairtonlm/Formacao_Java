@@ -10,15 +10,15 @@ public class Program {
 
         String nome = JOptionPane.showInputDialog("Digite o nome do Aluno: ");
         String matricula = JOptionPane.showInputDialog("Qual a número da Matrícula do aluno:");
-        String dataNascimento = JOptionPane.showInputDialog("Qual a data de nascimento do aluno: ");
-        String cpf = JOptionPane.showInputDialog("Qual a CPF do aluno: ");
+        //String dataNascimento = JOptionPane.showInputDialog("Qual a data de nascimento do aluno: ");
+        //String cpf = JOptionPane.showInputDialog("Qual a CPF do aluno: ");
 
         AlunoNE aluno1 = new AlunoNE();
 
         aluno1.setNome(nome);
         aluno1.setMatricula(Integer.valueOf(matricula));
-        aluno1.setDataNascimento(dataNascimento);
-        aluno1.setCpf(cpf);
+        //aluno1.setDataNascimento(dataNascimento);
+        //aluno1.setCpf(cpf);
 
         for(int pos = 1; pos <= 4; pos++){
             String nomeDisciplina = JOptionPane.showInputDialog("Digite o nome da disciplina " + pos + " ?");
