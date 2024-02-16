@@ -1,13 +1,14 @@
 package novaescola;
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Program {
     public static void main(String[] args) {
         System.out.println("--------Aluno 01 NE--------");
-
-
-
+        List<AlunoNE> alunos = new ArrayList<>();
+        for (int qtd = 0; qtd <= 1; qtd++) {
         String nome = JOptionPane.showInputDialog("Digite o nome do Aluno: ");
         String matricula = JOptionPane.showInputDialog("Qual a número da Matrícula do aluno:");
         //String dataNascimento = JOptionPane.showInputDialog("Qual a data de nascimento do aluno: ");
@@ -20,7 +21,7 @@ public class Program {
         //aluno1.setDataNascimento(dataNascimento);
         //aluno1.setCpf(cpf);
 
-        for(int pos = 1; pos <= 4; pos++){
+        for (int pos = 1; pos <= 4; pos++) {
             String nomeDisciplina = JOptionPane.showInputDialog("Digite o nome da disciplina " + pos + " ?");
             String notaDisciplina = JOptionPane.showInputDialog("Digite a nota " + pos + " ?");
 
@@ -34,17 +35,18 @@ public class Program {
         }
         int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma disciplina?");
 
-        if(escolha == 0){//Yes
+        if (escolha == 0) {//Yes
             int continuarRemover = 0;
             int posicao = 1;
 
-            while (continuarRemover == 0){
+            while (continuarRemover == 0) {
                 String disciplinaRemover = JOptionPane.showInputDialog("Qual a disciplina remover ? 1, 2, 3 ou 4 ");
                 aluno1.getDisciplinas().remove(Integer.valueOf(disciplinaRemover).intValue() - posicao);
                 posicao++;
                 continuarRemover = JOptionPane.showConfirmDialog(null, "Continuar a remover? ");
             }
         }
+    }
         //Impressão de dados
         System.out.println();
         System.out.println(aluno1.toString());
