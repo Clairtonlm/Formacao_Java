@@ -1,0 +1,89 @@
+Ao longo de 2020 e 2021, diversas competições esportivas foram postergadas devido à pandemia. Com o passar do tempo, muitos organizadores tiveram que readequar seus cadastros de atletas para conseguir dimensionar corretamente a estrutura necessária para realização do evento no ano de 2022 e com isso alguns problemas surgiram. Para evitar erros, decidiram construir um sistema que auxilie nessa tarefa de controle de informações e você foi escolhido para realizar o levantamento de classes para este sistema.
+
+Uma das classes necessárias será a "Atleta". Esta classe terá todas as informações sobre o atleta que pretende competir determinada prova. Alguns dados podem e devem ser abertos ao acesso geral dentro do código, pois são informações abertas e que podem ser utilizadas para criação de campanhas de marketing, porém outras deverão ser restritas somente à classes derivadas do Atleta e também teremos informações confidenciais que deverão ser informadas apenas durante o cadastro e não poderão ser alteradas ou acessadas em nenhum outra parte do código.
+
+Abaixo você encontrará o nome, tipo e descritivo de acesso do atributo:
+
+nome (String): aberto para utilização geral em qualquer parte do código.
+dataNascimento (String): restrito apenas para classes que sejam derivadas do Atleta, pois existem pessoas que não se sentem confortáveis em compartilhar essa informação.
+cpf (String): informação restrita e que não pode ser acessada ou alterada em nenhum outro lugar, exceto a própria classe Atleta.
+melhorTempo (String): informação restrita apenas para classes derivadas do Atleta.
+quantidadeParticipacoes (int): informação aberta para acesso e atualização de qualquer lugar do código.
+Observações: Não é necessário criar um construtor para a classe Atleta. Caso seja criada, é obrigatória a existência de um construtor sem nenhum parâmetro.
+
+Considerando a descrição da classe e seus atributos necessários, construa uma entidade que atenda os requisitos de atributos e seus respectivos modificadores de acesso.
+
+comece com esse codigo
+public class Atleta { 
+
+}
+
+--------------------------------------
+Crie uma classe Usuario com um atributo privado senhas e um método alterarSenha.
+
+Caso a nova senha seja igual as três últimas fornecidas, o método alterarSenha deverá retornar "Senha não pode ser igual as três últimas utilizadas";
+Caso seja diferente, deve retornar "Senha alterada com sucesso".
+
+comece com esse codigo
+public class Atleta { 
+
+}
+---------------------------------
+Depois de um ano com ótimos resultados, uma empresa de comércio de produtos alimentícios decidiu que era hora de expandir e optou por iniciar a construção de um sistema para controle de seus produtos e emissão de nota fiscal. Para atendermos a necessidade deste cliente, será necessário:
+
+Criar uma classe chamada Produto com as propriedades:
+codigo: público do tipo string, que será usado para armazenar o identificador único dos produtos;
+precoUnitario: público do tipo double, que armazenará o valor unitário do produto com até duas casas decimais;
+quantidade: público do tipo inteiro, que terá a informação de quantidade do produto que está sendo comprado;
+Criar um construtor que receba o valor das propriedades acima, respeitando a sequência: codigo, precoUnitario e quantidade.
+
+Criar uma classe chamada NotaFiscal com as propriedades:
+
+Produtos: privado do tipo List<Produto>, que armazenará os produtos vendidos em uma determinada compra;
+Agora que definimos quais entidades serão necessárias para essa versão, precisamos atribuir alguns comportamentos para elas. Para isso, considere as premissas a seguir:
+
+Na classe NotaFiscal deverá existir um método chamado adicionarProduto que receba como parâmetro um objeto Produto. O método deve adicionar o produto recebido na lista de produtos da nota fiscal. Este método não deve ter retorno.
+Também deverá ser possível remover um produto adicionado na lista de produtos. Para isso, crie o método removerProdutos que receba como parâmetro o código do produto a ser removido. Este método não deve ter retorno.
+Para facilitar o trabalho do caixa da empresa, precisamos disponibilizar um método chamado calcularValorProduto. Este método deverá retornar o valor total do produto recebido via parâmetro. Para chegar ao resultado do valor, considere a equação: precoUnitario * quantidade. O retorno do método deverá ser o resultado do cálculo apresentado anteriormente (o resultado poderá ser decimal).
+Para concluir a compra e apresentar o valor final para o cliente, precisaremos criar um método chamado calcularValorNotaFiscal, que deverá retornar o valor total de todos os itens da nota.
+comece com esse codigo
+public class Produto
+{
+	// Implemente a classe Produto aqui
+}
+
+public class NotaFiscal
+{
+	// Implemente a classe NotaFiscal aqui
+}
+
+---------------------------------
+Em uma escola de São Paulo, um dos professores responsáveis pelas aulas de informática decidiu automatizar as apurações de notas dos alunos. Para isso, ele precisa de uma ajuda extra na construção de algumas classes.
+
+Para ajudar o professor, construa um método chamado calcularMediaFinal que receba como parâmetro a matrícula do aluno (matricula), duas notas de provas (nota1 e nota2) e uma nota de trabalho (nota_trabalho) e calcule a média final do aluno.
+
+Observações:
+
+Utilize os mesmos nomes de parâmetros que estão entre parenteses na descrição do exercício.
+Para calcular a média, considere: somar todas as notas e dividir por três.
+
+comece com esse codigo
+public class Atleta { 
+
+}
+---------------------------------
+Em uma escola de São Paulo, um dos professores responsáveis pelas aulas de informática decidiu automatizar as apurações de notas dos alunos. Para isso, ele precisa de uma ajuda extra na construção de algumas classes.
+
+O professor já deixou pronto um método chamado calcularMediaFinal que recebe como parâmetro a matrícula do aluno, duas notas de provas e uma nota de trabalho e retorna a média final do aluno. Além deste primeiro método, ele já deixou a estrutura do método verificarPromocaoAluno pronta, porém não deu tempo de implementar a lógica necessária.
+
+O método verificarPromocaoAluno deverá conferir a média final do aluno e determinar se o aluno foi aprovado. Caso tenha sido aprovado, deverá retornar a seguinte mensagem: "Aluno aprovado com média X", onde X é a média final do aluno. Em caso de reprovação, a mensagem deverá ser: "Aluno reprovado com média X", onde X é a média final do aluno.
+
+Observações:
+
+Para ser aprovado, o aluno deverá ter uma média final maior ou igual a 7.
+
+comece com esse codigo
+public class Atleta { 
+
+}
+---------------------------------

@@ -1,6 +1,6 @@
 package src.enums;
 
-public enum workerLevel {
+public enum WorkerLevel {
     JUNIOR,
     MID_LEVEL,
     PLENO,
