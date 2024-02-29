@@ -1,5 +1,5 @@
 # Preparação em Java 
-## Repositório voltado para estudo
+## Repositório voltado para estudo e experimentos
 Repositório voltado para estudo e práticas da linguagem Java. Onde uso para trinar e anotar dúvidas e questionamentos.
 
 ## O quê estou aprendendo
