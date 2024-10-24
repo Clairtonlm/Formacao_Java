@@ -19,10 +19,20 @@ public class Programa {
         System.out.println("Digite o quantidade de produtos: ");
         produto.quantidade = sc.nextInt();
 
-        System.out.println(produto.nome + " ," + produto.quantidade + " ," + produto.preco);
+       // System.out.println(produto.nome + " ," + produto.quantidade + " ," + produto.preco);
 
+        System.out.println(produto.toString());
+        System.out.println("Entre a quantidade de produtos que vai adicionar: ");
+        int quantidade = sc.nextInt();
+        produto.addProdutos(quantidade);
 
+        System.out.println("Update do produto" + produto.toString());
+        System.out.println(produto.toString());
 
+        System.out.println("Digite quantos produtos devem ser removidos");
+        int quantidade2 = sc.nextInt();
+        produto.removeProdutos(quantidade2);
+        System.out.println(produto.toString());
 
 
 
