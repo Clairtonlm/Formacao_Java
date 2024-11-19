@@ -1,0 +1,12 @@
+em um banco, para se cadastrar uma conta bancaria é necessário informar o numero da conta
+o nome do titular da conta, o valor do deposito inicial que o titular depositou ao abrir a conta.
+Este valor de deposito inicial, entretanto, é opcional, ou seja, se o titular não tiver dinheiro a depositar no momento de abrir sua conta, o deposito nãi serpa feito eo saldo inicial da conta será zero.
+
+depois que a conta for aberta o numero nunca poderá ser alterado, já o nome do titular pode ser alterado, pois a pessao pode mudar de nome
+por efeito de casamento, por exemplo
+
+o saldo da conta não pode ser alterado livremente. é preciso haver um mecanismo para proteger isso. O saldo só maumente por meio de deposito, e ó diminui por meio de saques. Para cada saque realizado, o bando cobra uma taxa de $5,00. A conta pode ficar com saldo negativo
+caso não tenha dinheiro sufuciente
+
+vamos fazer um programa que realize o cadastro de uma conta, dando opção para que seja ou não informado o valor de deposito inicial
+em seguuda, realizar um deposito e depois , sempre motrando os dados da conta a pos a operação.
