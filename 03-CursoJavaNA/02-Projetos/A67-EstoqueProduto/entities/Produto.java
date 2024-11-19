@@ -16,6 +16,12 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidade = 0;
+    }
+
     // Method to calculate total value in stock
     public double totalValueInStock() {
         return preco * quantidade;
