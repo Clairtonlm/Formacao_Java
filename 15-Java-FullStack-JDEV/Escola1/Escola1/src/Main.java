@@ -5,5 +5,6 @@ public class Main {
         Aluno aluno2 = new Aluno("ClairtonLIma");
 
         System.out.println(aluno1.toString());
+        
     }
 }
