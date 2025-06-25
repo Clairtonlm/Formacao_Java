@@ -16,4 +16,42 @@ public class Aluno {
     public Aluno(String nomePadrao){
         this.nome = nomePadrao;
     }
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getDataNascimento() {
+        return dataNascimento;
+    }
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public String getNumeroCpf() {
+        return numeroCpf;
+    }
+    public void setNumeroCpf(String numeroCpf) {
+        this.numeroCpf = numeroCpf;
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", dataNascimento='" + dataNascimento + '\'' +
+                ", numeroCpf='" + numeroCpf + '\'' +
+                '}';
+    }
 }
